@@ -1,0 +1,118 @@
+-- PublicConfigs.json
+
+return {
+	{
+		Title = "Rivals Config legit cheating",
+		Details = "Clean legit config for public servers.",
+		Creator = "LuaX",
+		Date = "2026-01-15",
+		LastUpdated = "2026-01-15",
+		SupportedGames = {"Rivals"},
+        SupportedGamesID = {"17625359962", "133215910299950", "129604661913557", "117398147513099", "71874690745115", "18126510175"},
+        ConfigID = "LuaXRivals",
+		Likes = 3,
+		Downloads = 6,
+		AffectedModules = {"SilentAim","TriggerBot","Desync","FastEquip","HitBoxes","Hitmarker Disabler","Hurt Effect Disabler","Chams","DevBadge","ESP","NameTags","Tracers","DeviceSpoofer","NoCameraShake","StaffDetector","ActiveBypassV1","Anti-AFK","Anime Pictures","CharacterOutlines","ChatTag","HandCustomizer","Unlockall"},
+		Reviews = {
+			{
+				Username = "GamerFoxy",
+				Comment = "Vouch legit config real",
+				Date = "2026-01-15",
+				Liked = true,
+			},
+			{
+				Username = "lunknown",
+				Comment = "mid i got lagbacks on 1v1",
+				Date = "2026-01-15",
+				Liked = false,
+			},
+			{
+				Username = "alexsandress",
+				Comment = "didnt work",
+				Date = "2026-01-15",
+				Liked = false,
+			},
+		},
+		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/LuaX"} 
+	},
+	{
+		Title = "Blatant counterblox config",
+		Details = "vouch best config to destroy delta users",
+		Creator = "GamerFoxy",
+		Date = "2026-01-19",
+		LastUpdated = "2026-01-19",
+		SupportedGames = {"CounterBlox"},
+        SupportedGamesID = {301549746, 1480424328, 1869597719, 5325113759},
+        ConfigID = "GMCounterBloxBlatant",
+		Likes = 1,
+		Downloads = 2,
+		AffectedModules = {"DmgBoost","InfiniteAmmo","RapidFire","FullAuto","InstantEquip","InstantReload","NoSlowdown","NoSpread","SkinCustomizer","HandCustomizer","InfiniteMelee","Wallbang","MaxPenetration","KillAll", "AntiAim","Teleport","NoFallDamage","NoFireDamage","Buy","HitBoxes","RemoveEffects","ViewModel","ThirdPerson","FOV","KnifeGiver","KnifeBot","Bhop","BulletTrail","ShowEnemyMoney","Ragebot"},
+		Reviews = {
+		},
+		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
+	},
+	{
+		Title = "BedwarsLobby Blatant Config",
+		Details = "for lobby duh vro",
+		Creator = "GamerFoxy",
+		Date = "2026-01-19",
+		LastUpdated = "2026-01-19",
+		SupportedGames = {"BedwarsLobby"},
+        SupportedGamesID = {6872265039},
+        ConfigID = "GMBedwarsLobbyBlatant",
+		Likes = 1,
+		Downloads = 1,
+		AffectedModules = {"CharacterOutlines","Shaders","AnimePictures","StaffDetector","AntiRagdoll","AutoCrate","NameTags","AutoRejoin","Headless","AntiAFK","Disabler","ChatTag","InfJump","Tracers","Arrows","Chams","Health","Sprint","ESP"},
+		Reviews = {
+		},
+		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
+	},
+	{
+		Title = "Bedwars Blatant Config OP",
+		Details = "skibidi destroy voidware users",
+		Creator = "GamerFoxy",
+		Date = "2026-01-19",
+		LastUpdated = "2026-01-19",
+		SupportedGames = {"Bedwars"},
+        SupportedGamesID = {6872274481, 8444591321, 8560631822, 16008862571},
+        ConfigID = "GMBedwarsBlatant",
+		Likes = 0,
+		Downloads = 5,
+		AffectedModules = {"Proximity Prompt Duration","DamageIndicatorChanger","TrainWhistleExploit","ProximityExtender","BlockCPSRemover","REDvsBLUE (wool)","CharacterOutlines","RemotesConnect","AdventureExploit","ShopTierBypass","ProjectileAimbot","ProjectileExploit","ZoomUnlocker","AutoKitBypass","Anime Pictures","SetPlayerLevel","AutoConsume","AutoVoidDrop","ProjectileAura","AutoSuffocate","MeatDetector","FastConsume","NoSlowdown","AC MOD View","PickupRange","StaffDetector","NoClickDelay","TrapDisabler","ArmorSwitch","TexturePack","GamingChair","AutoCounter","AutoBuildUp","BetterDavey","AutoBalloon","AutoCharge","StorageESP","AutoHotbar","AutoClicker","KeepSprint","NameTags","AutoShoot","ChestSteal","TriggerBot","AutoGloop","FastBreak","BedPlates","AntiNoClip","AutoShoot","AutoToxic","AimAssist","AutoPearl","AntiDeath","BedNotify","KillRender","Headless","AutoPlay","DesirePA","FastDrop","AutoTool","Interface","HitBoxes","AutoBuy","Anti-AFK","Kill Effect","AutoFire","CleanKit","ChatTag","Breaker","Velocity","BedESP","Tracers","Killaura","Arrows","AntiFall","Charms","Health","NoFall","KillESP","Reach","Sprint","Clutch","ESP"},
+		Reviews = {
+		},
+		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
+	},
+	{
+		Title = "Arsenal Blatant Config",
+		Details = "perfected for clapping cheaters",
+		Creator = "GamerFoxy",
+		Date = "2026-01-19",
+		LastUpdated = "2026-01-19",
+		SupportedGames = {"Arsenal"},
+        SupportedGamesID = {286090429, 385792440, 391595633, 1069912173, 4646345676, 4690140579, 5133094040, 6318874810, 6361145282, 8412573470, 11810505137, 11828780714, 11924224825, 13496860531, 17228184384, 17584410630, 17680403936, 75194636531213, 79137385850056, 98283919607281, 112464274410705, 119778160910911, 123366595556261, 131309041033532},
+        ConfigID = "GMArsenalBlatant",
+		Likes = 0,
+		Downloads = 0,
+		AffectedModules = {"AnnouncerChanger","SkinChanger","MeleeChanger","DeviceSpoofer","KillEffects","SilentAimbot","CharacterOutlines","HandCustomizer","AnimePictures","Speed","NoReloadTime","TauntChanger","InfiniteAmmo","NoEquipTime","StaffDetector","AlwaysAuto","AntiRagdoll","NameTags","AutoRejoin","AlwaysCrit","DmgBoost","TriggerBot","NoSpread","RapidFire","HitBoxes","NoRecoil","AntiAFK","CamFOV","Tracers","AntiFall","Arrows","Chams","Phase","Health","Reach","ESP"},
+		Reviews = {
+		},
+		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
+	},
+	{
+		Title = "RainWare V6 Blatant Bedwars Config OP Mobile Only",
+		Details = "Rainy Vape Getting Ready To Rape",
+		Creator = "Void2RealOnyt",
+		Date = "2026-01-19",
+		LastUpdated = "2026-01-19",
+		SupportedGames = {"Bedwars","MOBILE ONLY"},
+        SupportedGamesID = {6872274481},
+        ConfigID = "RWV6Blatant",
+		Likes = 0,
+		Downloads = 0,
+		AffectedModules = {"CheaterDetector","RemoveStatus","TexturePackV3","AdventureExploit","ShopTierBypass","ProjectileAimbot","RainwareSky","AutoConsume","AutoVoidDrop","AutoShoot","AutoToxic","AimAssist","AutoPearl","AutoPlay","FastDrop","AutoTool","HitBoxes","AutoBuy","Anti-AFK","ChatTag","Breaker","Velocity","BedESP","Tracers","Killaura","Arrows","AntiFall","Chams","Health","NoFall","Reach","Sprint","ESP"},
+		Reviews = {
+		},
+		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/Void2RealOnyt"} 
+	},
+}
