@@ -6397,30 +6397,34 @@ themeDir = textgui:CreateDropdown({
 function GradientAPI:RunList(list)
     for _, settings in ipairs(list) do
         task.spawn(function()
-            runService.RenderStepped:Wait() 
-            
             local targets = GetGradientTargets(settings.Object)
             for _, TextLabel in ipairs(targets) do
                 local UIGradient = GetOrCreateGradient(TextLabel)
 
                 task.spawn(function()
-                    while TextLabel.Parent and textguicolordrop.Value == 'Themes' do
-                        local dt = runService.RenderStepped:Wait()
-
+                    local colors = settings.Colors
+                    
+                    while TextLabel.Parent and TextLabel:IsDescendantOf(game) do
+                        if textguicolordrop.Value ~= 'Themes' then 
+                            break 
+                        end
                         if not TextLabel.Visible or TextLabel.TextTransparency >= 1 then
+                            task.wait(0.2)
                             continue
                         end
+
                         local topPos = TextLabel.AbsolutePosition
                         local bottomPos = topPos + Vector2.new(0, TextLabel.AbsoluteSize.Y)
 
-                        local topColor = getGradientColor(topPos, settings.Colors.Main, settings.Colors.Secondary, settings.Colors.Third)
-                        local bottomColor = getGradientColor(bottomPos, settings.Colors.Main, settings.Colors.Secondary, settings.Colors.Third)
+                        local topColor = getGradientColor(topPos, colors.Main, colors.Secondary, colors.Third)
+                        local bottomColor = getGradientColor(bottomPos, colors.Main, colors.Secondary, colors.Third)
 
                         UIGradient.Color = ColorSequence.new{
                             ColorSequenceKeypoint.new(0, topColor),
                             ColorSequenceKeypoint.new(1, bottomColor),
                         }
                         TextLabel.TextColor3 = Color3.new(1, 1, 1)
+                        task.wait(0.03) 
                     end
                 end)
             end
@@ -7095,6 +7099,9 @@ end
 
 function mainapi:UpdateGUI(hue, sat, val, default)
 	if mainapi.Loaded == nil then return end
+	if not clickgui.Visible and not mainapi.Legit.Window.Visible then 
+		return
+    end
 	local isThemeMode = mainapi.RainbowMode.Value == 'Themes'
     local mainHue, mainSat, mainVal = hue, sat, val
     if isThemeMode then
