@@ -20,7 +20,67 @@ local mainapi = {
 	ThreadFix = setthreadidentity and true or false,
 	ToggleNotifications = {},
 	Version = '4.18',
-	Windows = {}
+	Windows = {},
+	Themes = {
+		Aubergine = {{Color3.fromRGB(170, 7, 107), Color3.fromRGB(97, 4, 95)}, 1, 8},
+		Aqua = {{Color3.fromRGB(185, 250, 255), Color3.fromRGB(79, 199, 200)}, 6},
+		Banana = {{Color3.fromRGB(253, 236, 177), Color3.fromRGB(255, 255, 255)}, 3},
+		Blend = {{Color3.fromRGB(71, 148, 253), Color3.fromRGB(71, 253, 160)}, 4, 6},
+		Blossom = {{Color3.fromRGB(226, 208, 249), Color3.fromRGB(49, 119, 115)}, 9, 10},
+		Bubblegum = {{Color3.fromRGB(243, 145, 216), Color3.fromRGB(152, 165, 243)}, 8, 9},
+		['Candy Cane'] = {{Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 255, 255)}, 1},
+		Cherry = {{Color3.fromRGB(187, 55, 125), Color3.fromRGB(251, 211, 233)}, 1, 8, 9},
+		Christmas = {{Color3.fromRGB(255, 64, 64), Color3.fromRGB(255, 255, 255), Color3.fromRGB(64, 255, 64)}, 1, 4},
+		Coral = {{Color3.fromRGB(244, 168, 150), Color3.fromRGB(52, 133, 151)}, 2, 7, 9},
+		Creida = {{Color3.fromRGB(156, 164, 224), Color3.fromRGB(54, 57, 78)}, 10},
+		['Creida Two'] = {{Color3.fromRGB(154, 202, 235), Color3.fromRGB(88, 130, 161)}, 10},
+		['Digital Horizon'] = {{Color3.fromRGB(95, 195, 228), Color3.fromRGB(229, 93, 135)}, 1, 6, 9},
+		Express = {{Color3.fromRGB(173, 83, 137), Color3.fromRGB(60, 16, 83)}, 8, 9},
+		Gothic = {{Color3.fromRGB(31, 30, 30), Color3.fromRGB(196, 190, 190)}, 10},
+		Halogen = {{Color3.fromRGB(255, 65, 108), Color3.fromRGB(255, 75, 43)}, 1, 2},
+		Hyper = {{Color3.fromRGB(236, 110, 173), Color3.fromRGB(52, 148, 230)}, 6, 7, 9},
+		Legacy = {{Color3.fromRGB(112, 206, 255), Color3.fromRGB(112, 206, 255)}, 6, 7},
+		['Lime Water'] = {{Color3.fromRGB(18, 255, 247), Color3.fromRGB(179, 255, 171)}, 4, 6},
+		Lush = {{Color3.fromRGB(168, 224, 99), Color3.fromRGB(86, 171, 47)}, 4, 5},
+		Magic = {{Color3.fromRGB(74, 0, 224), Color3.fromRGB(142, 45, 226)}, 7, 8},
+		May = {{Color3.fromRGB(170, 7, 107), Color3.fromRGB(238, 79, 238)}, 8, 9},
+		['Orange Juice'] = {{Color3.fromRGB(252, 74, 26), Color3.fromRGB(247, 183, 51)}, 2, 3},
+		Pastel = {{Color3.fromRGB(243, 155, 178), Color3.fromRGB(207, 196, 243)}, 9},
+		Peony = {{Color3.fromRGB(226, 208, 249), Color3.fromRGB(207, 171, 255)}, 9, 10},
+		Pumpkin = {{Color3.fromRGB(241, 166, 98), Color3.fromRGB(255, 216, 169), Color3.fromRGB(227, 139, 42)}, 2},
+		Purple = {{Color3.fromRGB(82, 67, 145), Color3.fromRGB(117, 95, 207)}, 8},
+		Rainbow = {{Color3.new(1, 1, 1), Color3.new(1, 1, 1)}, 10},
+		Rue = {{Color3.fromRGB(234, 118, 176), Color3.fromRGB(31, 30, 30)}, 9},
+		Satin = {{Color3.fromRGB(215, 60, 67), Color3.fromRGB(140, 23, 39)}, 1},
+		Shadow = {{Color3.fromRGB(97, 131, 255), Color3.fromRGB(206, 212, 255)}, 6},
+		['Snowy Sky'] = {{Color3.fromRGB(1, 171, 179), Color3.fromRGB(234, 234, 234), Color3.fromRGB(18, 232, 232)}, 6, 10},
+		['Steel Fade'] = {{Color3.fromRGB(66, 134, 244), Color3.fromRGB(55, 59, 68)}, 7, 10},
+		Sundae = {{Color3.fromRGB(206, 74, 126), Color3.fromRGB(122, 44, 77)}, 1, 8, 9},
+		Sunkist = {{Color3.fromRGB(242, 201, 76), Color3.fromRGB(242, 153, 74)}, 2, 3},
+		Water = {{Color3.fromRGB(12, 232, 199), Color3.fromRGB(12, 163, 232)}, 6, 7},
+		Winter = {{Color3.new(1, 1, 1), Color3.new(1, 1, 1)}, 10},
+		Wood = {{Color3.fromRGB(79, 109, 81), Color3.fromRGB(170, 139, 87), Color3.fromRGB(240, 235, 206)}, 5},
+        Cyberpunk = {{Color3.fromRGB(255, 0, 204), Color3.fromRGB(0, 255, 204)}, 1, 9},
+        Midnight = {{Color3.fromRGB(10, 12, 25), Color3.fromRGB(45, 50, 90)}, 10},
+        Obsidian = {{Color3.fromRGB(15, 15, 15), Color3.fromRGB(80, 80, 80)}, 10},
+        NeonBlue = {{Color3.fromRGB(0, 180, 255), Color3.fromRGB(0, 60, 255)}, 6, 7},
+        NeonRed = {{Color3.fromRGB(255, 60, 60), Color3.fromRGB(120, 0, 0)}, 1},
+        NeonGreen = {{Color3.fromRGB(0, 255, 120), Color3.fromRGB(0, 140, 80)}, 4},
+        Matrix = {{Color3.fromRGB(0, 255, 70), Color3.fromRGB(0, 30, 0)}, 4, 10},
+        Vaporwave = {{Color3.fromRGB(255, 120, 215), Color3.fromRGB(120, 180, 255)}, 8, 9},
+        Carbon = {{Color3.fromRGB(28, 28, 30), Color3.fromRGB(58, 58, 60)}, 10},
+        Ash = {{Color3.fromRGB(55, 55, 55), Color3.fromRGB(20, 20, 20)}, 10},
+        Slate = {{Color3.fromRGB(44, 62, 80), Color3.fromRGB(28, 40, 51)}, 10},
+        Noir = {{Color3.fromRGB(5, 5, 5), Color3.fromRGB(60, 60, 60)}, 10},
+        RoseQuartz = {{Color3.fromRGB(255, 205, 215), Color3.fromRGB(240, 145, 170)}, 9},
+        LavenderMist = {{Color3.fromRGB(210, 190, 255), Color3.fromRGB(160, 140, 220)}, 9, 10},
+        MintCream = {{Color3.fromRGB(210, 255, 235), Color3.fromRGB(120, 200, 170)}, 4},
+        Skyline = {{Color3.fromRGB(130, 200, 255), Color3.fromRGB(70, 120, 180)}, 6},
+        BloodMoon = {{Color3.fromRGB(140, 0, 0), Color3.fromRGB(30, 0, 0)}, 1, 10},
+        Galaxy = {{Color3.fromRGB(60, 0, 120), Color3.fromRGB(0, 0, 0), Color3.fromRGB(120, 0, 255)}, 8, 10},
+        Toxic = {{Color3.fromRGB(180, 255, 0), Color3.fromRGB(60, 80, 0)}, 4},
+        Inferno = {{Color3.fromRGB(255, 80, 0), Color3.fromRGB(80, 0, 0)}, 2},
+	},
 }
 --gng can we stop skiding and start pasting
 local cloneref = cloneref or function(obj)
@@ -33,8 +93,8 @@ local guiService = cloneref(game:GetService('GuiService'))
 local runService = cloneref(game:GetService('RunService'))
 local httpService = cloneref(game:GetService('HttpService'))
 
-local GradientAPI = loadstring(game:HttpGet("https://raw.githubusercontent.com/AsuraXowner/Sentinel/refs/heads/main/Dependencies/ColorAPI"))()
-local PublicConfigsGui = loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/b75524c3f8ade1e4cd160f1267560aea3ea9c8dd7f05e53de091148fd2e61496/download"))()
+local GradientAPI = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/ColorAPI.lua"))()
+local PublicConfigsGui = loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/17b60e05907add1f672b2856b3bb4b8157e0417a556b23d8a49df178f006118c/download"))()
 local PublicConfigsGui = getgenv().PublicConfigsGui
 
 local fontsize = Instance.new('GetTextBoundsParams')
@@ -61,6 +121,17 @@ local uipallet = {
 	FontSemiBold = Font.fromEnum(Enum.Font.Arial, Enum.FontWeight.SemiBold),
 	Tween = TweenInfo.new(0.16, Enum.EasingStyle.Linear)
 }
+
+local currentThemeColors = {
+    Main = Color3.new(1,1,1),
+    Secondary = Color3.new(1,1,1),
+    Third = Color3.new(1,1,1)
+}
+local themeList = {}
+for name, _ in pairs(mainapi.Themes) do
+    table.insert(themeList, name)
+end
+table.sort(themeList)
 
 local getcustomassets = {
 	['sentinelvape/assets/new/add.png'] = 'rbxassetid://14368300605',
@@ -119,12 +190,12 @@ local getcustomassets = {
 	['sentinelvape/assets/new/targetstab.png'] = 'rbxassetid://14497393895',
 	['sentinelvape/assets/new/textguiicon.png'] = 'rbxassetid://14368355456',
 	['sentinelvape/assets/new/textv4.png'] = 'rbxassetid://14368357095',
-	['sentinelvape/assets/new/textsentinel.png'] = 'rbxassetid://14368358200',
+	['sentinelvape/assets/new/textsentinel.png'] = 'rbxassetid://74522593124650',
 	['sentinelvape/assets/new/utilityicon.png'] = 'rbxassetid://14368359107',
 	['sentinelvape/assets/new/vape.png'] = 'rbxassetid://14373395239',
 	['sentinelvape/assets/new/warning.png'] = 'rbxassetid://14368361552',
 	['sentinelvape/assets/new/worldicon.png'] = 'rbxassetid://14368362492',
-	['sentinelvape/assets/new/sentinel.png'] = 'rbxassetid://14368362492'
+	['sentinelvape/assets/new/sentinel.png'] = 'rbxassetid://104203025380917'
 }
 
 local isfile = isfile or function(file)
@@ -332,6 +403,45 @@ local function createMobileButton(buttonapi, position)
 	end)
 
 	buttonapi.Bind = {Button = button}
+end
+
+local function GetOrCreateGradient(obj)
+	local g = obj:FindFirstChildOfClass("UIGradient")
+	if not g then
+		g = Instance.new("UIGradient")
+		g.Name = "UIGradient"
+		g.Parent = obj
+	end
+	return g
+end
+
+local function GetGradientTargets(obj)
+	local targets = {}
+	if obj:IsA("TextLabel") then
+		table.insert(targets, obj)
+	end
+	for _, child in ipairs(obj:GetDescendants()) do
+		if child:IsA("TextLabel") then
+			table.insert(targets, child)
+		end
+	end
+	return targets
+end
+
+local function getBlendFactor(vec)
+	return math.sin(tick() / 0.6 + vec.X * 0.005 + vec.Y * 0.06) * 0.5 + 0.5
+end
+
+local function getGradientColor(vec, mainColor, secondaryColor, thirdColor)
+	local blend = getBlendFactor(vec)
+	if thirdColor then
+		if blend <= 0.5 then
+			return mainColor:Lerp(secondaryColor, blend * 2)
+		else
+			return secondaryColor:Lerp(thirdColor, (blend - 0.5) * 2)
+		end
+	end
+	return secondaryColor:Lerp(mainColor, blend)
 end
 
 getcustomasset = not inputService.TouchEnabled and assetfunction and function(path)
@@ -2659,7 +2769,7 @@ function mainapi:CreateGUI()
 			icon = Instance.new('ImageLabel')
 			icon.Name = 'Icon'
 			icon.Size = categorysettings.Size
-			icon.Position = UDim2.fromOffset(13, 13)
+			icon.Position = categorysettings.Position or UDim2.fromOffset(13, 13)
 			icon.BackgroundTransparency = 1
 			icon.Image = categorysettings.Icon
 			icon.ImageColor3 = color.Dark(uipallet.Text, 0.16)
@@ -3612,7 +3722,7 @@ function mainapi:CreateCategory(categorysettings)
 	local icon = Instance.new('ImageLabel')
 	icon.Name = 'Icon'
 	icon.Size = categorysettings.Size
-	icon.Position = UDim2.fromOffset(12, (icon.Size.X.Offset > 20 and 14 or 13))
+	icon.Position = categorysettings.Position or UDim2.fromOffset(12, (icon.Size.X.Offset > 20 and 14 or 13))
 	icon.BackgroundTransparency = 1
 	icon.Image = categorysettings.Icon
 	icon.ImageColor3 = uipallet.Text
@@ -3694,6 +3804,9 @@ function mainapi:CreateCategory(categorysettings)
 		modulebutton.TextSize = 14
 		modulebutton.FontFace = uipallet.Font
 		modulebutton.Parent = children
+		local gradient = GetOrCreateGradient(modulebutton)
+        gradient.Rotation = 90
+        gradient.Enabled = false
 		local gradient = Instance.new('UIGradient')
 		gradient.Rotation = 90
 		gradient.Enabled = false
@@ -3817,28 +3930,48 @@ function mainapi:CreateCategory(categorysettings)
 		end
 
 		function moduleapi:Toggle(multiple)
-			if mainapi.ThreadFix then
-				setthreadidentity(8)
-			end
-			self.Enabled = not self.Enabled
-			divider.Visible = self.Enabled
-			gradient.Enabled = self.Enabled
-			modulebutton.TextColor3 = (hovered or modulechildren.Visible) and uipallet.Text or color.Dark(uipallet.Text, 0.16)
-			modulebutton.BackgroundColor3 = (hovered or modulechildren.Visible) and color.Light(uipallet.Main, 0.02) or uipallet.Main
-			dots.ImageColor3 = self.Enabled and Color3.fromRGB(50, 50, 50) or color.Light(uipallet.Main, 0.37)
-			bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
-			bindtext.TextColor3 = color.Dark(uipallet.Text, 0.43)
-			if not self.Enabled then
-				for _, v in self.Connections do
-					v:Disconnect()
-				end
-				table.clear(self.Connections)
-			end
-			if not multiple then
-				mainapi:UpdateTextGUI()
-			end
-			task.spawn(modulesettings.Function, self.Enabled)
-		end
+    if mainapi.ThreadFix then
+        setthreadidentity(8)
+    end
+
+    self.Enabled = not self.Enabled
+    divider.Visible = self.Enabled
+    if self.Enabled then
+        gradient.Enabled = true
+        self.GradientController = GradientAPI:CreateGradient({
+            Object = modulebutton,
+            Speed = 2, 
+            Mode = "fade", 
+            Direction = "TopDown",
+            Colors = {
+                Main = currentThemeColors.Main,
+                Secondary = currentThemeColors.Secondary,
+                Third = currentThemeColors.Third
+            }
+        })
+    else
+        if self.GradientController then
+            self.GradientController:Remove()
+            self.GradientController = nil
+        end
+        gradient.Enabled = false
+    end
+    modulebutton.TextColor3 = (hovered or modulechildren.Visible) and uipallet.Text or color.Dark(uipallet.Text, 0.16)
+    modulebutton.BackgroundColor3 = (hovered or modulechildren.Visible) and color.Light(uipallet.Main, 0.02) or uipallet.Main
+    dots.ImageColor3 = self.Enabled and Color3.fromRGB(50, 50, 50) or color.Light(uipallet.Main, 0.37)
+    bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
+    bindtext.TextColor3 = color.Dark(uipallet.Text, 0.43)
+    if not self.Enabled then
+        for _, v in self.Connections do
+            v:Disconnect()
+        end
+        table.clear(self.Connections)
+    end
+    if not multiple then
+        mainapi:UpdateTextGUI()
+    end
+    task.spawn(modulesettings.Function, self.Enabled)
+end
 
 		for i, v in components do
 			moduleapi['Create'..i] = function(_, optionsettings)
@@ -4021,6 +4154,7 @@ function mainapi:CreateCategory(categorysettings)
 	categoryapi.Button = self.Categories.Main:CreateButton({
 		Name = categorysettings.Name,
 		Icon = categorysettings.Icon,
+		Position = categorysettings.Position,
 		Size = categorysettings.Size,
 		Window = window
 	})
@@ -5666,18 +5800,6 @@ scarcitybanner.TextTransparency = 0.5
 scarcitybanner.FontFace = uipallet.Font
 scarcitybanner.Parent = clickgui
 
-GradientAPI:CreateGradient({
-	Object = scarcitybanner,
-	Colors = {
-		Main = Color3.fromRGB(45, 173, 198),
-		Secondary = Color3.fromRGB(78, 137, 173),
-		Third = Color3.fromRGB(255, 255, 255)
-	},
-	Mode = "fade",
-	Direction = "LeftToRight",
-	Speed = 1,
-})
-
 local modal = Instance.new('TextButton')
 modal.BackgroundTransparency = 1
 modal.Modal = true
@@ -5789,7 +5911,8 @@ mainapi:CreateCategory({
 mainapi:CreateCategory({
 	Name = 'Sentinel',
 	Icon = getcustomasset('sentinelvape/assets/new/sentinel.png'),
-	Size = UDim2.fromOffset(15, 14)
+	Size = UDim2.fromOffset(27, 27),
+	Position = UDim2.new(0, 7, 0, 7)
 })
 mainapi.Categories.Main:CreateDivider('misc')
 
@@ -5903,9 +6026,9 @@ general:CreateButton({
 		end
 		shared.vapereload = true
 		if shared.VapeDeveloper then
-			loadstring(game:HttpGet("https://sentinel1.vercel.app/get/main.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
 		else
-		    loadstring(game:HttpGet("https://sentinel1.vercel.app/get/main.lua"))()
+		  loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
 		end
 	end,
 	Tooltip = 'This will set your profile to the default settings of Vape'
@@ -5922,9 +6045,9 @@ general:CreateButton({
 	Function = function()
 		shared.vapereload = true
 		if shared.VapeDeveloper then
-			loadstring(game:HttpGet("https://sentinel1.vercel.app/get/main.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
 		else
-			loadstring(game:HttpGet("https://sentinel1.vercel.app/get/main.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
 		end
 	end,
 	Tooltip = 'Reloads vape for debugging purposes'
@@ -5995,6 +6118,7 @@ guipane:CreateToggle({
 	Tooltip = 'Shows the button to change to Legit Mode'
 })
 local scaleslider = {Object = {}, Value = 1}
+local GUIThemes
 mainapi.Scale = guipane:CreateToggle({
 	Name = 'Auto rescale',
 	Default = true,
@@ -6030,18 +6154,62 @@ guipane:CreateDropdown({
 			writefile('sentinelvape/profiles/gui.txt', val)
 			shared.vapereload = true
 			if shared.VapeDeveloper then
-				loadstring(game:HttpGet("https://sentinel1.vercel.app/get/main.lua"))()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
 			else
-				loadstring(game:HttpGet("https://sentinel1.vercel.app/get/main.lua"))()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
 			end
 		end
 	end,
 	Tooltip = 'new - The newest vape theme to since v4.05'
 })
 mainapi.RainbowMode = guipane:CreateDropdown({
-	Name = 'Rainbow Mode',
-	List = {'Normal', 'Gradient', 'Retro'},
-	Tooltip = 'Normal - Smooth color fade\nGradient - Gradient color fade\nRetro - Static color'
+	Name = 'Color Mode',
+	List = {'Normal', 'Gradient', 'Retro','Themes'},
+	Function = function(val)
+        GUIThemes.Object.Visible = val == 'Themes'
+    end,
+	Tooltip = 'Normal - Smooth color fade\nGradient - Gradient color fade\nRetro - Static color',
+})
+
+GUIThemes = guipane:CreateDropdown({
+    Name = 'GUIThemes',
+    List = themeList,
+    Default = "Blend",
+    Function = function(val)
+        local themeData = mainapi.Themes[val]
+        if themeData then
+            local colorTable = themeData[1]
+            currentThemeColors.Main = colorTable[1]
+            currentThemeColors.Secondary = colorTable[2] or colorTable[1]
+            currentThemeColors.Third = colorTable[3] or colorTable[2] or colorTable[1]
+            local h, s, v = currentThemeColors.Main:ToHSV()
+            mainapi.GUIColor.Hue, mainapi.GUIColor.Sat, mainapi.GUIColor.Value = h, s, v
+            local active = GradientAPI.ActiveGradients[scarcitybanner]
+            if active then
+                active:ChangeColor(currentThemeColors.Main, currentThemeColors.Secondary, currentThemeColors.Third)
+            else
+                GradientAPI:CreateGradient({
+                    Object = scarcitybanner,
+                    Colors = currentThemeColors,
+                    Mode = "fade", 
+                    Direction = "LeftToRight",
+                    Speed = 1,
+                })
+            end
+
+			for obj, controller in pairs(GradientAPI.ActiveGradients) do
+                controller:ChangeColor(
+                    currentThemeColors.Main, 
+                    currentThemeColors.Secondary, 
+                    currentThemeColors.Third
+                )
+            end
+
+            mainapi:UpdateTextGUI()
+            mainapi:UpdateGUI(h, s, v, true)
+        end
+    end,
+    Visible = false
 })
 mainapi.RainbowSpeed = guipane:CreateSlider({
 	Name = 'Rainbow speed',
@@ -6168,11 +6336,18 @@ local textguifont = textgui:CreateFont({
 	end
 })
 local textguicolor
+local Themes
+local themeMode
+local themeDir
 local textguicolordrop = textgui:CreateDropdown({
 	Name = 'Color Mode',
-	List = {'Match GUI color', 'Custom color'},
+	List = {'Match GUI color', 'Custom color','Themes'},
+	Default = "Themes",
 	Function = function(val)
 		textguicolor.Object.Visible = val == 'Custom color'
+		Themes.Object.Visible = val == 'Themes'
+		themeMode.Object.Visible = val == 'Themes'
+		themeDir.Object.Visible = val == 'Themes'
 		mainapi:UpdateTextGUI()
 	end
 })
@@ -6184,6 +6359,75 @@ textguicolor = textgui:CreateColorSlider({
 	Darker = true,
 	Visible = false
 })
+Themes = textgui:CreateDropdown({
+    Name = 'Themes',
+    List = themeList,
+	Default = "Blend",
+    Function = function(val)
+        local themeData = mainapi.Themes[val]
+        if themeData then
+            local colorTable = themeData[1]
+            currentThemeColors.Main = colorTable[1]
+            currentThemeColors.Secondary = colorTable[2] or colorTable[1]
+            currentThemeColors.Third = colorTable[3] or colorTable[2] or colorTable[1]
+            mainapi:UpdateTextGUI()
+        end
+    end,
+    Darker = true,
+    Visible = false
+})
+themeMode = textgui:CreateDropdown({
+    Name = 'Animation Mode',
+    List = {'static', 'fade', 'breathe', 'smooth', 'pulse', 'wave', 'fade2'},
+	Default = "fade",
+    Function = function() mainapi:UpdateTextGUI() end,
+	Darker = true,
+    Visible = false
+})
+
+themeDir = textgui:CreateDropdown({
+    Name = 'Animation Direction',
+    List = {'LeftToRight', 'RightToLeft', 'TopDown', 'BottomUp'},
+	Default = "TopDown",
+    Function = function() mainapi:UpdateTextGUI() end,
+	Darker = true,
+    Visible = false
+})
+
+function GradientAPI:RunList(list)
+    for _, settings in ipairs(list) do
+        task.spawn(function()
+            runService.RenderStepped:Wait() 
+            
+            local targets = GetGradientTargets(settings.Object)
+            for _, TextLabel in ipairs(targets) do
+                local UIGradient = GetOrCreateGradient(TextLabel)
+
+                task.spawn(function()
+                    while TextLabel.Parent and textguicolordrop.Value == 'Themes' do
+                        local dt = runService.RenderStepped:Wait()
+
+                        if not TextLabel.Visible or TextLabel.TextTransparency >= 1 then
+                            continue
+                        end
+                        local topPos = TextLabel.AbsolutePosition
+                        local bottomPos = topPos + Vector2.new(0, TextLabel.AbsoluteSize.Y)
+
+                        local topColor = getGradientColor(topPos, settings.Colors.Main, settings.Colors.Secondary, settings.Colors.Third)
+                        local bottomColor = getGradientColor(bottomPos, settings.Colors.Main, settings.Colors.Secondary, settings.Colors.Third)
+
+                        UIGradient.Color = ColorSequence.new{
+                            ColorSequenceKeypoint.new(0, topColor),
+                            ColorSequenceKeypoint.new(1, bottomColor),
+                        }
+                        TextLabel.TextColor3 = Color3.new(1, 1, 1)
+                    end
+                end)
+            end
+        end)
+    end
+end
+
 local VapeTextScale = Instance.new('UIScale')
 VapeTextScale.Parent = textgui.Children
 local textguiscale = textgui:CreateSlider({
@@ -6817,25 +7061,51 @@ function mainapi:UpdateTextGUI(afterload)
 			end)
 		end
 
-		for i, v in VapeLabels do
-			if v.Color then
-				v.Color.Parent.Line.Visible = i ~= 1
-			end
-			v.Object.LayoutOrder = i
-		end
+         for i, v in VapeLabels do
+            v.Object.LayoutOrder = i 
+            if textguicolordrop.Value == 'Themes' then 
+                v.Text.TextColor3 = Color3.new(1, 1, 1)
+            end
+            if v.Color then
+                v.Color.Parent.Line.Visible = i ~= 1
+            end
+        end
 	end
+
+if textguicolordrop.Value == 'Themes' then
+        task.spawn(function()
+            runService.RenderStepped:Wait() 
+            GradientAPI:RunList({
+                {
+                    Object = VapeLabelHolder, 
+                    Colors = {
+                        Main = currentThemeColors.Main,
+                        Secondary = currentThemeColors.Secondary,
+                        Third = currentThemeColors.Third
+                    },
+                    Mode = themeMode.Value,
+                    Direction = themeDir.Value
+                }
+            })
+        end)
+    end
 
 	mainapi:UpdateGUI(mainapi.GUIColor.Hue, mainapi.GUIColor.Sat, mainapi.GUIColor.Value, true)
 end
 
 function mainapi:UpdateGUI(hue, sat, val, default)
 	if mainapi.Loaded == nil then return end
+	local isThemeMode = mainapi.RainbowMode.Value == 'Themes'
+    local mainHue, mainSat, mainVal = hue, sat, val
+    if isThemeMode then
+        mainHue, mainSat, mainVal = currentThemeColors.Main:ToHSV()
+    end
 	if not default and mainapi.GUIColor.Rainbow then return end
 	if textgui.Button.Enabled then
 		VapeLogoGradient.Color = ColorSequence.new({
-			ColorSequenceKeypoint.new(0, Color3.fromHSV(hue, sat, val)),
-			ColorSequenceKeypoint.new(1, textguigradient.Enabled and Color3.fromHSV(mainapi:Color((hue - 0.075) % 1)) or Color3.fromHSV(hue, sat, val))
-		})
+            ColorSequenceKeypoint.new(0, isThemeMode and currentThemeColors.Main or Color3.fromHSV(mainHue, mainSat, mainVal)),
+            ColorSequenceKeypoint.new(1, isThemeMode and currentThemeColors.Secondary or (textguigradient.Enabled and Color3.fromHSV(mainapi:Color((mainHue - 0.075) % 1)) or Color3.fromHSV(mainHue, mainSat, mainVal)))
+        })
 		VapeLogoGradient2.Color = textguigradient.Enabled and textguigradientv4.Enabled and VapeLogoGradient.Color or ColorSequence.new({
 			ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
 			ColorSequenceKeypoint.new(1, Color3.new(1, 1, 1))
@@ -6843,15 +7113,12 @@ function mainapi:UpdateGUI(hue, sat, val, default)
 		VapeLabelCustom.TextColor3 = textguicolorcustomtoggle.Enabled and Color3.fromHSV(textguicolorcustom.Hue, textguicolorcustom.Sat, textguicolorcustom.Value) or VapeLogoGradient.Color.Keypoints[2].Value
 
 		local customcolor = textguicolordrop.Value == 'Custom color' and Color3.fromHSV(textguicolor.Hue, textguicolor.Sat, textguicolor.Value) or nil
-		for i, v in VapeLabels do
-			v.Text.TextColor3 = customcolor or (mainapi.GUIColor.Rainbow and Color3.fromHSV(mainapi:Color((hue - ((textguigradient and i + 2 or i) * 0.025)) % 1)) or VapeLogoGradient.Color.Keypoints[2].Value)
-			if v.Color then
-				v.Color.BackgroundColor3 = v.Text.TextColor3
-			end
-			if textguibackgroundtint.Enabled and v.Background then
-				v.Background.BackgroundColor3 = color.Dark(v.Text.TextColor3, 0.75)
-			end
-		end
+        for i, v in VapeLabels do
+            if textguicolordrop.Value ~= 'Themes' then
+                v.Text.TextColor3 = customcolor or (isThemeMode and currentThemeColors.Main or (mainapi.GUIColor.Rainbow and Color3.fromHSV(mainapi:Color((mainHue - ((textguigradient and i + 2 or i) * 0.025)) % 1)) or VapeLogoGradient.Color.Keypoints[2].Value))
+                if v.Color then v.Color.BackgroundColor3 = v.Text.TextColor3 end
+            end
+        end
 	end
 
 	if not clickgui.Visible and not mainapi.Legit.Window.Visible then return end
