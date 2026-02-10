@@ -33,7 +33,7 @@ return {
 				Liked = false,
 			},
 		},
-		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/LuaX"} 
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/LuaX"} 
 	},
 	{
 		Title = "Blatant counterblox config",
@@ -49,7 +49,7 @@ return {
 		AffectedModules = {"DmgBoost","InfiniteAmmo","RapidFire","FullAuto","InstantEquip","InstantReload","NoSlowdown","NoSpread","SkinCustomizer","HandCustomizer","InfiniteMelee","Wallbang","MaxPenetration","KillAll", "AntiAim","Teleport","NoFallDamage","NoFireDamage","Buy","HitBoxes","RemoveEffects","ViewModel","ThirdPerson","FOV","KnifeGiver","KnifeBot","Bhop","BulletTrail","ShowEnemyMoney","Ragebot"},
 		Reviews = {
 		},
-		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
 	{
 		Title = "BedwarsLobby Blatant Config",
@@ -65,7 +65,7 @@ return {
 		AffectedModules = {"CharacterOutlines","Shaders","AnimePictures","StaffDetector","AntiRagdoll","AutoCrate","NameTags","AutoRejoin","Headless","AntiAFK","Disabler","ChatTag","InfJump","Tracers","Arrows","Chams","Health","Sprint","ESP"},
 		Reviews = {
 		},
-		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
 	{
 		Title = "Bedwars Blatant Config OP",
@@ -81,7 +81,7 @@ return {
 		AffectedModules = {"Proximity Prompt Duration","DamageIndicatorChanger","TrainWhistleExploit","ProximityExtender","BlockCPSRemover","REDvsBLUE (wool)","CharacterOutlines","RemotesConnect","AdventureExploit","ShopTierBypass","ProjectileAimbot","ProjectileExploit","ZoomUnlocker","AutoKitBypass","Anime Pictures","SetPlayerLevel","AutoConsume","AutoVoidDrop","ProjectileAura","AutoSuffocate","MeatDetector","FastConsume","NoSlowdown","AC MOD View","PickupRange","StaffDetector","NoClickDelay","TrapDisabler","ArmorSwitch","TexturePack","GamingChair","AutoCounter","AutoBuildUp","BetterDavey","AutoBalloon","AutoCharge","StorageESP","AutoHotbar","AutoClicker","KeepSprint","NameTags","AutoShoot","ChestSteal","TriggerBot","AutoGloop","FastBreak","BedPlates","AntiNoClip","AutoShoot","AutoToxic","AimAssist","AutoPearl","AntiDeath","BedNotify","KillRender","Headless","AutoPlay","DesirePA","FastDrop","AutoTool","Interface","HitBoxes","AutoBuy","Anti-AFK","Kill Effect","AutoFire","CleanKit","ChatTag","Breaker","Velocity","BedESP","Tracers","Killaura","Arrows","AntiFall","Charms","Health","NoFall","KillESP","Reach","Sprint","Clutch","ESP"},
 		Reviews = {
 		},
-		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
 	{
 		Title = "Arsenal Blatant Config",
@@ -97,7 +97,7 @@ return {
 		AffectedModules = {"AnnouncerChanger","SkinChanger","MeleeChanger","DeviceSpoofer","KillEffects","SilentAimbot","CharacterOutlines","HandCustomizer","AnimePictures","Speed","NoReloadTime","TauntChanger","InfiniteAmmo","NoEquipTime","StaffDetector","AlwaysAuto","AntiRagdoll","NameTags","AutoRejoin","AlwaysCrit","DmgBoost","TriggerBot","NoSpread","RapidFire","HitBoxes","NoRecoil","AntiAFK","CamFOV","Tracers","AntiFall","Arrows","Chams","Phase","Health","Reach","ESP"},
 		Reviews = {
 		},
-		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
 	{
 		Title = "RainWare V6 Blatant Bedwars Config OP Mobile Only",
@@ -113,6 +113,6 @@ return {
 		AffectedModules = {"CheaterDetector","RemoveStatus","TexturePackV3","AdventureExploit","ShopTierBypass","ProjectileAimbot","RainwareSky","AutoConsume","AutoVoidDrop","AutoShoot","AutoToxic","AimAssist","AutoPearl","AutoPlay","FastDrop","AutoTool","HitBoxes","AutoBuy","Anti-AFK","ChatTag","Breaker","Velocity","BedESP","Tracers","Killaura","Arrows","AntiFall","Chams","Health","NoFall","Reach","Sprint","ESP"},
 		Reviews = {
 		},
-		Code = {"https://github.com/AsuraXowner/SentinelVAPE/tree/main/Configs/data/Void2RealOnyt"} 
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/Void2RealOnyt"} 
 	},
 }
