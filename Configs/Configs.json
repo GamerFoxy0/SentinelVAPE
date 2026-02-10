@@ -2,9 +2,11 @@
 
 return {
 	{
+	    ID = "LU9143",
 		Title = "Rivals Config legit cheating",
 		Details = "Clean legit config for public servers.",
 		Creator = "LuaX",
+	    OwnerID = "118902FB-6346-AFSAG-148F8",
 		Date = "2026-01-15",
 		LastUpdated = "2026-01-15",
 		SupportedGames = {"Rivals"},
@@ -36,9 +38,11 @@ return {
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/LuaX"} 
 	},
 	{
+		ID = "GA94815",
 		Title = "Blatant counterblox config",
 		Details = "vouch best config to destroy delta users",
 		Creator = "GamerFoxy",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
 		Date = "2026-01-19",
 		LastUpdated = "2026-01-19",
 		SupportedGames = {"CounterBlox"},
@@ -52,9 +56,11 @@ return {
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
 	{
+		ID = "GA84512",
 		Title = "BedwarsLobby Blatant Config",
 		Details = "for lobby duh vro",
 		Creator = "GamerFoxy",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
 		Date = "2026-01-19",
 		LastUpdated = "2026-01-19",
 		SupportedGames = {"BedwarsLobby"},
@@ -68,9 +74,11 @@ return {
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
 	{
+		ID = "GA85743",
 		Title = "Bedwars Blatant Config OP",
 		Details = "skibidi destroy voidware users",
 		Creator = "GamerFoxy",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
 		Date = "2026-01-19",
 		LastUpdated = "2026-01-19",
 		SupportedGames = {"Bedwars"},
@@ -84,9 +92,11 @@ return {
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
 	{
+		ID = "GA9385",
 		Title = "Arsenal Blatant Config",
 		Details = "perfected for clapping cheaters",
 		Creator = "GamerFoxy",
+        OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
 		Date = "2026-01-19",
 		LastUpdated = "2026-01-19",
 		SupportedGames = {"Arsenal"},
@@ -100,9 +110,11 @@ return {
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
 	{
+		ID = "VO48573",
 		Title = "RainWare V6 Blatant Bedwars Config OP Mobile Only",
 		Details = "Rainy Vape Getting Ready To Rape",
 		Creator = "Void2RealOnyt",
+		OwnerID = "0",
 		Date = "2026-01-19",
 		LastUpdated = "2026-01-19",
 		SupportedGames = {"Bedwars","MOBILE ONLY"},
