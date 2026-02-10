@@ -94,7 +94,7 @@ local runService = cloneref(game:GetService('RunService'))
 local httpService = cloneref(game:GetService('HttpService'))
 
 local GradientAPI = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/ColorAPI.lua"))()
-local PublicConfigsGui = loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/17b60e05907add1f672b2856b3bb4b8157e0417a556b23d8a49df178f006118c/download"))()
+local PublicConfigsGui = loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/4b32d2e09ca023914dba2a9582e49856ae8dc6355bd7b31d1aff68734b64b9f5/download"))()
 local PublicConfigsGui = getgenv().PublicConfigsGui
 
 local fontsize = Instance.new('GetTextBoundsParams')
