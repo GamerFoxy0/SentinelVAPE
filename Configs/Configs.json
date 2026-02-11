@@ -51,7 +51,7 @@ return {
         ConfigID = "GMCounterBloxBlatant",
 		Likes = 1,
 		Downloads = 2,
-        Settings = {isCodeOnly=false,isAnonymous=false},
+        Settings = {isCodeOnly=true,isAnonymous=true},
 		AffectedModules = {"DmgBoost","InfiniteAmmo","RapidFire","FullAuto","InstantEquip","InstantReload","NoSlowdown","NoSpread","SkinCustomizer","HandCustomizer","InfiniteMelee","Wallbang","MaxPenetration","KillAll", "AntiAim","Teleport","NoFallDamage","NoFireDamage","Buy","HitBoxes","RemoveEffects","ViewModel","ThirdPerson","FOV","KnifeGiver","KnifeBot","Bhop","BulletTrail","ShowEnemyMoney","Ragebot"},
 		Reviews = {
 		},
