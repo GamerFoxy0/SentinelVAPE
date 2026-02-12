@@ -139,4 +139,23 @@ return {
 		},
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/Void2RealOnyt"} 
 	},
+ {
+    ID = "MY1AXM3",
+    Title = "my ass config",
+    Details = "my tuff config",
+    Creator = "proguy8325",
+    OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+    Date = "2026-02-12",
+    LastUpdated = "2026-02-12",
+    SupportedGames = {"Baseplate"},
+    SupportedGamesID = {123974602339071},
+    ConfigID = "my ass config",
+    Directory = "sentinelvape",
+    Likes = 0,
+    Downloads = 0,
+    Settings = {isCodeOnly=false, isAnonymous=false},
+    AffectedModules = {"Reach", "   Speed", "   HitBoxes"},
+    Reviews = {},
+    Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy8325"} 
+  },
 }
