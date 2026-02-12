@@ -149,4 +149,23 @@ return {
 		ConfigID = "651XMP9",
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/blob/main/Configs/data/Unknown/53453543.txt"} 
 	},
+	{
+		ID = "TEUIKSW",
+		Title = "Test Config",
+		Details = "HMM TEST",
+		Creator = "proguy8325",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-02-12",
+		LastUpdated = "2026-02-12",
+		SupportedGames = {"Unknown"},
+		SupportedGamesID = {123974602339071},
+		ConfigID = "TEUIKSW",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false,isAnonymous=false},
+		AffectedModules = {},
+		Reviews = {},
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/blob/main/Configs/data/proguy8325/123974602339071.txt"} 
+	},
 }
