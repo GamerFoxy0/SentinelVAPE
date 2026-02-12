@@ -139,4 +139,14 @@ return {
 		},
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/Void2RealOnyt"} 
 	},
+	{
+		ID = "651XMP9",
+		Title = "658888888888888",
+		Details = "Approved Submission",
+		Creator = "Unknown",
+		Date = "2026-02-12",
+		SupportedGamesID = {53453543},
+		ConfigID = "651XMP9",
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/blob/main/Configs/data/Unknown/53453543.txt"} 
+	},
 }
