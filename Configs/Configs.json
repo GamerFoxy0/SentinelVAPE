@@ -149,7 +149,7 @@ return {
     LastUpdated = "2026-02-12",
     SupportedGames = {"Baseplate"},
     SupportedGamesID = {123974602339071},
-    ConfigID = "my ass config",
+    ConfigID = "Testconfig",
     Directory = "sentinelvape",
     Likes = 0,
     Downloads = 0,
