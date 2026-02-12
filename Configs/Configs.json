@@ -168,4 +168,23 @@ return {
 		Reviews = {},
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/blob/main/Configs/data/proguy8325/123974602339071.txt"} 
 	},
+	{
+		ID = "TEIV1X5",
+		Title = "Test Config",
+		Details = "my description is so cool",
+		Creator = "proguy8325",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-02-12",
+		LastUpdated = "2026-02-12",
+		SupportedGames = {"Baseplate"},
+		SupportedGamesID = {123974602339071},
+		ConfigID = "TEIV1X5",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false,isAnonymous=false},
+		AffectedModules = {},
+		Reviews = {},
+		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/blob/main/Configs/data/proguy8325/MyProfile123974602339071.txt"} 
+	},
 }
