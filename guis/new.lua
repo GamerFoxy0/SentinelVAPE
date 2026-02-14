@@ -1,4 +1,3 @@
-local CoreGuiConfiguration = game:GetService("CoreGuiConfiguration")
 local mainapi = {
 	Categories = {},
 	GUIColor = {
