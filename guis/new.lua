@@ -1,3 +1,4 @@
+local CoreGuiConfiguration = game:GetService("CoreGuiConfiguration")
 local mainapi = {
 	Categories = {},
 	GUIColor = {
@@ -94,8 +95,10 @@ local runService = cloneref(game:GetService('RunService'))
 local httpService = cloneref(game:GetService('HttpService'))
 
 local GradientAPI = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/ColorAPI.lua"))()
-local PublicConfigsGui = loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/4b32d2e09ca023914dba2a9582e49856ae8dc6355bd7b31d1aff68734b64b9f5/download"))()
+local PublicConfigsGui = loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/d3fed9af4da2615812e9eda055d0880c20585818afd57ee15c28a49f9dde292b/download"))()
 local PublicConfigsGui = getgenv().PublicConfigsGui
+
+local SelectedProfile = "default"
 
 local fontsize = Instance.new('GetTextBoundsParams')
 fontsize.Width = math.huge
@@ -2103,12 +2106,16 @@ components = {
 		addbutton.MouseButton1Click:Connect(function()
 			if not table.find(optionapi.List, addvalue.Text) then
 				optionapi:ChangeValue(addvalue.Text)
+				SelectedProfile = addvalue.Text
+				PublicConfigsGui:UpdateProfile(SelectedProfile)
 				addvalue.Text = ''
 			end
 		end)
 		addvalue.FocusLost:Connect(function(enter)
 			if enter and not table.find(optionapi.List, addvalue.Text) then
 				optionapi:ChangeValue(addvalue.Text)
+				SelectedProfile = addvalue.Text
+				PublicConfigsGui:UpdateProfile(SelectedProfile)
 				addvalue.Text = ''
 			end
 		end)
@@ -4658,11 +4665,15 @@ function mainapi:CreateCategoryList(categorysettings)
 				dotsbutton.MouseButton1Click:Connect(function()
 					if v.Name ~= mainapi.Profile then
 						categoryapi:ChangeValue(v.Name)
+						SelectedProfile = v.Name
+					    PublicConfigsGui:UpdateProfile(SelectedProfile)
 					end
 				end)
 				object.MouseButton1Click:Connect(function()
 					mainapi:Save(v.Name)
 					mainapi:Load(true)
+					SelectedProfile = v.Name
+					PublicConfigsGui:UpdateProfile(SelectedProfile)
 				end)
 				object.MouseEnter:Connect(function()
 					bind.Visible = true
@@ -4840,6 +4851,8 @@ function mainapi:CreateCategoryList(categorysettings)
 	addbutton.MouseButton1Click:Connect(function()
 		if not table.find(categoryapi.List, addvalue.Text) then
 			categoryapi:ChangeValue(addvalue.Text)
+			SelectedProfile = addvalue.Text
+			PublicConfigsGui:UpdateProfile(SelectedProfile)
 			addvalue.Text = ''
 		end
 	end)
@@ -4858,6 +4871,8 @@ function mainapi:CreateCategoryList(categorysettings)
 	addvalue.FocusLost:Connect(function(enter)
 		if enter and not table.find(categoryapi.List, addvalue.Text) then
 			categoryapi:ChangeValue(addvalue.Text)
+			SelectedProfile = addvalue.Text
+			PublicConfigsGui:UpdateProfile(SelectedProfile)
 			addvalue.Text = ''
 		end
 	end)
@@ -4883,6 +4898,8 @@ function mainapi:CreateCategoryList(categorysettings)
 	local function addvape(configname)
        if not table.find(categoryapi.List, configname) then
 			categoryapi:ChangeValue(configname)
+			SelectedProfile = configname
+			PublicConfigsGui:UpdateProfile(SelectedProfile)
 		end
 	end
 	settings.MouseButton1Click:Connect(function()
@@ -4892,7 +4909,7 @@ function mainapi:CreateCategoryList(categorysettings)
     local function notif(...) 
         return mainapi:CreateNotification(...) 
     end
-        PublicConfigsGui:Init(mainapi.gui.ScaledGui, notif, addvape,mainapi.GUIColor)
+        PublicConfigsGui:Init(mainapi.gui.ScaledGui, notif, addvape,mainapi.GUIColor,"sentinelvape",SelectedProfile)
     end
 	end)
 	window.InputBegan:Connect(function(inputObj)
@@ -7263,6 +7280,8 @@ mainapi:Clean(inputService.InputBegan:Connect(function(inputObj)
 			if checkKeybinds(mainapi.HeldKeybinds, v.Bind, inputObj.KeyCode.Name) and v.Name ~= mainapi.Profile then
 				mainapi:Save(v.Name)
 				mainapi:Load(true)
+				SelectedProfile = v.Name
+				PublicConfigsGui:UpdateProfile(SelectedProfile)
 				break
 			end
 		end
