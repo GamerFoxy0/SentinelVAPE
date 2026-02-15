@@ -15,7 +15,7 @@ return {
         Directory = "sentinelvape",
 		Likes = 3,
 		Downloads = 6,
-        Settings = {isCodeOnly=false,isAnonymous=false},
+        Settings = {isCodeOnly=false,isAnonymous=false,PcOnly=true,MobileOnly=false},
 		AffectedModules = {"SilentAim","TriggerBot","Desync","FastEquip","HitBoxes","Hitmarker Disabler","Hurt Effect Disabler","Chams","DevBadge","ESP","NameTags","Tracers","DeviceSpoofer","NoCameraShake","StaffDetector","ActiveBypassV1","Anti-AFK","Anime Pictures","CharacterOutlines","ChatTag","HandCustomizer","Unlockall"},
 		Reviews = {
 			{
@@ -53,7 +53,7 @@ return {
         Directory = "sentinelvape",
 		Likes = 1,
 		Downloads = 2,
-        Settings = {isCodeOnly=true,isAnonymous=true},
+        Settings = {isCodeOnly=true,isAnonymous=true,PcOnly=true,MobileOnly=false},
 		AffectedModules = {"DmgBoost","InfiniteAmmo","RapidFire","FullAuto","InstantEquip","InstantReload","NoSlowdown","NoSpread","SkinCustomizer","HandCustomizer","InfiniteMelee","Wallbang","MaxPenetration","KillAll", "AntiAim","Teleport","NoFallDamage","NoFireDamage","Buy","HitBoxes","RemoveEffects","ViewModel","ThirdPerson","FOV","KnifeGiver","KnifeBot","Bhop","BulletTrail","ShowEnemyMoney","Ragebot"},
 		Reviews = {
 		},
@@ -73,7 +73,7 @@ return {
         Directory = "sentinelvape",
 		Likes = 1,
 		Downloads = 1,
-        Settings = {isCodeOnly=false,isAnonymous=false},
+        Settings = {isCodeOnly=false,isAnonymous=false,PcOnly=true,MobileOnly=false},
 		AffectedModules = {"CharacterOutlines","Shaders","AnimePictures","StaffDetector","AntiRagdoll","AutoCrate","NameTags","AutoRejoin","Headless","AntiAFK","Disabler","ChatTag","InfJump","Tracers","Arrows","Chams","Health","Sprint","ESP"},
 		Reviews = {
 		},
@@ -93,7 +93,7 @@ return {
         Directory = "sentinelvape",
 		Likes = 0,
 		Downloads = 5,
-        Settings = {isCodeOnly=false,isAnonymous=false},
+        Settings = {isCodeOnly=false,isAnonymous=false,PcOnly=true,MobileOnly=false},
 		AffectedModules = {"Proximity Prompt Duration","DamageIndicatorChanger","TrainWhistleExploit","ProximityExtender","BlockCPSRemover","REDvsBLUE (wool)","CharacterOutlines","RemotesConnect","AdventureExploit","ShopTierBypass","ProjectileAimbot","ProjectileExploit","ZoomUnlocker","AutoKitBypass","Anime Pictures","SetPlayerLevel","AutoConsume","AutoVoidDrop","ProjectileAura","AutoSuffocate","MeatDetector","FastConsume","NoSlowdown","AC MOD View","PickupRange","StaffDetector","NoClickDelay","TrapDisabler","ArmorSwitch","TexturePack","GamingChair","AutoCounter","AutoBuildUp","BetterDavey","AutoBalloon","AutoCharge","StorageESP","AutoHotbar","AutoClicker","KeepSprint","NameTags","AutoShoot","ChestSteal","TriggerBot","AutoGloop","FastBreak","BedPlates","AntiNoClip","AutoShoot","AutoToxic","AimAssist","AutoPearl","AntiDeath","BedNotify","KillRender","Headless","AutoPlay","DesirePA","FastDrop","AutoTool","Interface","HitBoxes","AutoBuy","Anti-AFK","Kill Effect","AutoFire","CleanKit","ChatTag","Breaker","Velocity","BedESP","Tracers","Killaura","Arrows","AntiFall","Charms","Health","NoFall","KillESP","Reach","Sprint","Clutch","ESP"},
 		Reviews = {
 		},
@@ -113,7 +113,7 @@ return {
         Directory = "sentinelvape",
 		Likes = 0,
 		Downloads = 0,
-        Settings = {isCodeOnly=false,isAnonymous=false},
+        Settings = {isCodeOnly=false,isAnonymous=false,PcOnly=true,MobileOnly=false},
 		AffectedModules = {"AnnouncerChanger","SkinChanger","MeleeChanger","DeviceSpoofer","KillEffects","SilentAimbot","CharacterOutlines","HandCustomizer","AnimePictures","Speed","NoReloadTime","TauntChanger","InfiniteAmmo","NoEquipTime","StaffDetector","AlwaysAuto","AntiRagdoll","NameTags","AutoRejoin","AlwaysCrit","DmgBoost","TriggerBot","NoSpread","RapidFire","HitBoxes","NoRecoil","AntiAFK","CamFOV","Tracers","AntiFall","Arrows","Chams","Phase","Health","Reach","ESP"},
 		Reviews = {
 		},
@@ -133,7 +133,7 @@ return {
         Directory = "newvape",
 		Likes = 0,
 		Downloads = 0,
-        Settings = {isCodeOnly=false,isAnonymous=false},
+        Settings = {isCodeOnly=false,isAnonymous=false,PcOnly=false,MobileOnly=true},
 		AffectedModules = {"CheaterDetector","RemoveStatus","TexturePackV3","AdventureExploit","ShopTierBypass","ProjectileAimbot","RainwareSky","AutoConsume","AutoVoidDrop","AutoShoot","AutoToxic","AimAssist","AutoPearl","AutoPlay","FastDrop","AutoTool","HitBoxes","AutoBuy","Anti-AFK","ChatTag","Breaker","Velocity","BedESP","Tracers","Killaura","Arrows","AntiFall","Chams","Health","NoFall","Reach","Sprint","ESP"},
 		Reviews = {
 		},
@@ -153,8 +153,8 @@ return {
     Directory = "sentinelvape",
     Likes = 0,
     Downloads = 0,
-    Settings = {isCodeOnly=false, isAnonymous=false},
-    AffectedModules = {"Reach", "   Speed", "   HitBoxes"},
+    Settings = {isCodeOnly=false, isAnonymous=false,PcOnly=true,MobileOnly=false},
+    AffectedModules = {"Reach", "Speed", "HitBoxes"},
     Reviews = {},
     Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy8325"} 
   },
@@ -172,7 +172,7 @@ return {
     Directory = "sentinelvape",
     Likes = 0,
     Downloads = 0,
-    Settings = {isCodeOnly=false, isAnonymous=false},
+    Settings = {isCodeOnly=false, isAnonymous=false,PcOnly=true,MobileOnly=false},
     AffectedModules = {},
     Reviews = {},
     Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy34233"} 
