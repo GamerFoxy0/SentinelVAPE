@@ -139,35 +139,4 @@ return {
 		},
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/Void2RealOnyt"} 
 	},
-	{
-		ID = "LU1680",
-		Title = "trst45",
-		Details = "No description",
-		Creator = "proguy34233",
-		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
-		Date = "2026-02-16",
-		LastUpdated = "2026-02-16",
-		SupportedGames = {"Baseplate"},
-		SupportedGamesID = {168556275},
-		ConfigID = "cool45",
-		Directory = "sentinelvape",
-		Likes = 2,
-		Downloads = 0,
-		Settings = {isCodeOnly=true, isAnonymous=false, PcOnly=true, MobileOnly=false},
-		AffectedModules = {},
-		Reviews = {
-			{
-				Username = "void2realyt",
-				Comment = "Nigger",
-				Date = "2026-02-16",
-				Liked = false,
-			},
-			{
-				Username = "gamerfoxy02",
-				Comment = "vouch config",
-				Date = "2026-02-16",
-				Liked = true,
-			},},
-		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy34233"}
-	}
 }
