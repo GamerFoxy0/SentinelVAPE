@@ -142,7 +142,7 @@ return {
 	{
 		ID = "LU1680",
 		Title = "trst45",
-		Details = "test453445",
+		Details = "No description",
 		Creator = "proguy34233",
 		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
 		Date = "2026-02-16",
@@ -153,7 +153,7 @@ return {
 		Directory = "sentinelvape",
 		Likes = 2,
 		Downloads = 0,
-		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		Settings = {isCodeOnly=true, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {},
 		Reviews = {
 			{
