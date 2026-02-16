@@ -139,29 +139,4 @@ return {
 		},
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/Void2RealOnyt"} 
 	},
-    {
-        ID = "LU2559",
-        Title = "Test Config45",
-        Details = "Hi support",
-        Creator = "proguy34233",
-        OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
-        Date = "2026-02-16",
-        LastUpdated = "2026-02-16",
-        SupportedGames = {"Baseplate"}
-			{
-				Username = "gamerfoxy02",
-				Comment = "cool i guess👍",
-				Date = "2026-02-16",
-				Liked = true,
-			},,
-        SupportedGamesID = {168556275},
-        ConfigID = "test45",
-        Directory = "sentinelvape",
-        Likes = 1,
-        Downloads = 0,
-        Settings = {isCodeOnly=true, isAnonymous=false, PcOnly=true, MobileOnly=false},
-        AffectedModules = {},
-        Reviews = {},
-        Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy34233"}
-    },
 }
