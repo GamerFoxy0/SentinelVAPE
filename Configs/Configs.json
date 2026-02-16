@@ -155,7 +155,13 @@ return {
         Downloads = 0,
         Settings = {isCodeOnly=true, isAnonymous=true, PcOnly=true, MobileOnly=false},
         AffectedModules = {},
-        Reviews = {},
+        Reviews = {
+			{
+				Username = "gamerfoxy02",
+				Comment = "bad config ngl",
+				Date = "2026-02-16",
+				Liked = false,
+			},},
         Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy34233"}
     },
 }
