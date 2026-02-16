@@ -119,4 +119,23 @@ return {
 		},
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
+	{
+		ID = "LU3119",
+		Title = "Legit Abyss Config",
+		Details = "Made for pro gamers",
+		Creator = "proguy342331",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-02-16",
+		LastUpdated = "2026-02-16",
+		SupportedGames = {"Abyss"},
+		SupportedGamesID = {127794225497302},
+		ConfigID = "LegitAbyss",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"InstantReel","StaffDetector","FullBright","AutoRespawn","TubeBooster","AutoAchievements","FishChams","AutoSkipTutorial","CharacterOutlines","Anti-AFK","ChestChams","RedeemAllCodes","AutoDailyRewards","AntiRagdoll","AutorerollRace"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy342331"}
+	}
 }
