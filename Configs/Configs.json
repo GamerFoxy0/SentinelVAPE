@@ -150,7 +150,7 @@ return {
         SupportedGames = {"Baseplate"},
         SupportedGamesID = {168556275},
         ConfigID = "cool45",
-        Directory = "Unknown",
+        Directory = "sentinelvape",
         Likes = 0,
         Downloads = 0,
         Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
@@ -161,7 +161,7 @@ return {
 				Comment = "wow awesome👍",
 				Date = "2026-02-16",
 				Liked = true,
-			},},
+			},
         Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy34233"}
     },
 }
