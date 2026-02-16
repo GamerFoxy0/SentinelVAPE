@@ -119,24 +119,4 @@ return {
 		},
 		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/GamerFoxy"} 
 	},
-	{
-		ID = "VO48573",
-		Title = "RainWare V6 Blatant Bedwars Config OP Mobile Only",
-		Details = "Rainy Vape Getting Ready To Rape",
-		Creator = "Void2RealOnyt",
-		OwnerID = "5e75966c-7aab-4aed-8648-9b5694a9c1d1",
-		Date = "2026-01-19",
-		LastUpdated = "2026-01-19",
-		SupportedGames = {"Bedwars","MOBILE ONLY"},
-        SupportedGamesID = {6872274481},
-        ConfigID = "RWV6Blatant",
-        Directory = "newvape",
-		Likes = 0,
-		Downloads = 0,
-        Settings = {isCodeOnly=false,isAnonymous=false,PcOnly=false,MobileOnly=true},
-		AffectedModules = {"CheaterDetector","RemoveStatus","TexturePackV3","AdventureExploit","ShopTierBypass","ProjectileAimbot","RainwareSky","AutoConsume","AutoVoidDrop","AutoShoot","AutoToxic","AimAssist","AutoPearl","AutoPlay","FastDrop","AutoTool","HitBoxes","AutoBuy","Anti-AFK","ChatTag","Breaker","Velocity","BedESP","Tracers","Killaura","Arrows","AntiFall","Chams","Health","NoFall","Reach","Sprint","ESP"},
-		Reviews = {
-		},
-		Code = {"https://github.com/GamerFoxy0/SentinelVAPE/tree/main/Configs/data/Void2RealOnyt"} 
-	},
 }
