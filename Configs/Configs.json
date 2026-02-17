@@ -135,7 +135,13 @@ return {
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"InstantReel","StaffDetector","FullBright","AutoRespawn","TubeBooster","AutoAchievements","FishChams","AutoSkipTutorial","CharacterOutlines","Anti-AFK","ChestChams","RedeemAllCodes","AutoDailyRewards","AntiRagdoll","AutorerollRace"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "zemxreal",
+				Comment = "soo uhh where the config",
+				Date = "2026-02-17",
+				Liked = false,
+			},},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy342331"}
 	}
 }
