@@ -14,7 +14,7 @@ return {
         ConfigID = "LuaXRivals",
         Directory = "sentinelvape",
 		Likes = 3,
-		Downloads = 6,
+		Downloads = 7,
         Settings = {isCodeOnly=false,isAnonymous=false,PcOnly=true,MobileOnly=false},
 		AffectedModules = {"SilentAim","TriggerBot","Desync","FastEquip","HitBoxes","Hitmarker Disabler","Hurt Effect Disabler","Chams","DevBadge","ESP","NameTags","Tracers","DeviceSpoofer","NoCameraShake","StaffDetector","ActiveBypassV1","Anti-AFK","Anime Pictures","CharacterOutlines","ChatTag","HandCustomizer","Unlockall"},
 		Reviews = {
