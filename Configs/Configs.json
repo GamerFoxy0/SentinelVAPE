@@ -26,4 +26,23 @@ return {
 			},},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy342331"}
 	},
+	{
+		ID = "LU2759",
+		Title = "GalaxyArsenal",
+		Details = "GalaxyTheme perfect for destroying cheaters blatant Config",
+		Creator = "proguy342331",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-02-18",
+		LastUpdated = "2026-02-18",
+		SupportedGames = {"Arsenal"},
+		SupportedGamesID = {286090429},
+		ConfigID = "GMArsenalBlatant",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy342331"}
+	}
 }
