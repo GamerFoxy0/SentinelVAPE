@@ -4574,7 +4574,7 @@ function mainapi:CreateCategoryList(categorysettings)
 			if not table.find(categoryapi.List, addMainbutton.Text) then
 				categoryapi:ChangeValue(addMainbutton.Text)
 				SelectedProfile = addMainbutton.Text
-				--	PublicConfigsGui:UpdateProfile(SelectedProfile)
+				PublicConfigsGui:UpdateProfile(SelectedProfile)
 				addMainbutton.Text = ''
 			end
 		end)
@@ -4582,7 +4582,7 @@ function mainapi:CreateCategoryList(categorysettings)
 			if enter and not table.find(categoryapi.List, addMainbutton.Text) then
 				categoryapi:ChangeValue(addMainbutton.Text)
 				SelectedProfile = addMainbutton.Text
-				--	PublicConfigsGui:UpdateProfile(SelectedProfile)
+				PublicConfigsGui:UpdateProfile(SelectedProfile)
 				addMainbutton.Text = ''
 			end
 		end)
@@ -4653,7 +4653,7 @@ function mainapi:CreateCategoryList(categorysettings)
 			if not table.find(categoryapi.List, addvalue.Text) then
 				categoryapi:ChangeValue(addvalue.Text)
 				SelectedProfile = addvalue.Text
-				--	PublicConfigsGui:UpdateProfile(SelectedProfile)
+				PublicConfigsGui:UpdateProfile(SelectedProfile)
 				addvalue.Text = ''
 			end
 		end)
@@ -4671,7 +4671,7 @@ function mainapi:CreateCategoryList(categorysettings)
 			if enter and not table.find(categoryapi.List, addvalue.Text) then
 				categoryapi:ChangeValue(addvalue.Text)
 				SelectedProfile = addvalue.Text
-				--	PublicConfigsGui:UpdateProfile(SelectedProfile)
+				PublicConfigsGui:UpdateProfile(SelectedProfile)
 				addvalue.Text = ''
 			end
 		end)
@@ -4835,14 +4835,14 @@ function mainapi:CreateCategoryList(categorysettings)
 					if v.Name ~= mainapi.Profile then
 						categoryapi:ChangeValue(v.Name)
 						SelectedProfile = v.Name
-						--PublicConfigsGui:UpdateProfile(SelectedProfile)
+						PublicConfigsGui:UpdateProfile(SelectedProfile)
 					end
 				end)
 				object.MouseButton1Click:Connect(function()
 					mainapi:Save(v.Name)
 					mainapi:Load(true)
 					SelectedProfile = v.Name
-					--	PublicConfigsGui:UpdateProfile(SelectedProfile)
+					PublicConfigsGui:UpdateProfile(SelectedProfile)
 				end)
 				object.MouseEnter:Connect(function()
 					bind.Visible = true
