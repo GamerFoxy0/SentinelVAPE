@@ -65,3 +65,4 @@ utilityicon.png
 vape.png
 warning.png
 worldicon.png
+new.png
