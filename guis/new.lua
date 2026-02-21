@@ -197,7 +197,8 @@ local getcustomassets = {
 	['sentinelvape/assets/new/vape.png'] = 'rbxassetid://14373395239',
 	['sentinelvape/assets/new/warning.png'] = 'rbxassetid://14368361552',
 	['sentinelvape/assets/new/worldicon.png'] = 'rbxassetid://14368362492',
-	['sentinelvape/assets/new/sentinel.png'] = 'rbxassetid://104203025380917'
+	['sentinelvape/assets/new/sentinel.png'] = 'rbxassetid://104203025380917',
+	['sentinelvape/assets/new/new.png'] = 'rbxassetid://97775394291829'
 }
 
 local isfile = isfile or function(file)
@@ -4541,7 +4542,7 @@ function mainapi:CreateCategoryList(categorysettings)
 		publicButton.TextSize = 12
 		publicButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		publicButton.FontFace = uipallet.Font
-		publicButton.TextXAlignment = Enum.TextXAlignment.Right
+		publicButton.TextXAlignment = Enum.TextXAlignment.Center
 		publicButton.Parent = newbkg
 
 		addMainbutton.MouseEnter:Connect(function()
@@ -6122,7 +6123,7 @@ mainapi:CreateCategoryList({
 	Icon = getcustomasset('sentinelvape/assets/new/profilesicon.png'),
 	Size = UDim2.fromOffset(17, 10),
 	Position = UDim2.fromOffset(12, 16),
-	Placeholder = 'Type name',
+	Placeholder = 'CREATE NEW',
 	Profiles = true
 })
 
