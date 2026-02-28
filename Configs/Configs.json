@@ -61,7 +61,13 @@ return {
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"Desync","RedeemAllCodes","HitboxBooster","GamingChair","NameTags","ESP","AntiKatana","Chams","FastEquip","SilentAim","AimAssist","ActiveBypassV1","StaffDetector","HitBoxes","PlayerModel","TriggerBot","Autowin","AntiFall"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "im.hamburger.pro",
+				Comment = ":(",
+				Date = "2026-02-28",
+				Liked = false,
+			},},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/rizzler12fge"}
 	}
 }
