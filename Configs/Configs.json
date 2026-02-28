@@ -44,5 +44,24 @@ return {
 		AffectedModules = {},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy342331"}
+	},
+	{
+		ID = "LU1766",
+		Title = "jesus gayming chair blatant gangbanger 3000",
+		Details = "what is this diddy blud doing",
+		Creator = "rizzler12fge",
+		OwnerID = "8F2BCA58-997B-4AC5-9C44-AB5AFABDDC6B",
+		Date = "2026-02-28",
+		LastUpdated = "2026-02-28",
+		SupportedGames = {"rivals"},
+		SupportedGamesID = {17625359962},
+		ConfigID = "diddybludop",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"Desync","RedeemAllCodes","HitboxBooster","GamingChair","NameTags","ESP","AntiKatana","Chams","FastEquip","SilentAim","AimAssist","ActiveBypassV1","StaffDetector","HitBoxes","PlayerModel","TriggerBot","Autowin","AntiFall"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/rizzler12fge"}
 	}
 }
