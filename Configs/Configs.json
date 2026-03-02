@@ -57,11 +57,17 @@ return {
 		SupportedGamesID = {17625359962},
 		ConfigID = "diddybludop",
 		Directory = "sentinelvape",
-		Likes = 0,
+		Likes = 1,
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"Desync","RedeemAllCodes","HitboxBooster","GamingChair","NameTags","ESP","AntiKatana","Chams","FastEquip","SilentAim","AimAssist","ActiveBypassV1","StaffDetector","HitBoxes","PlayerModel","TriggerBot","Autowin","AntiFall"},
 		Reviews = {
+			{
+				Username = "gamerfoxy02",
+				Comment = "vouch rivals",
+				Date = "2026-03-02",
+				Liked = true,
+			},
 			{
 				Username = "im.hamburger.pro",
 				Comment = ":(",
