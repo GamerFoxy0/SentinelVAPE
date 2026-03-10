@@ -96,7 +96,7 @@ return {
 		SupportedGamesID = {123974602339071},
 		ConfigID = "diddybludop",
 		Directory = "sentinelvape",
-		Likes = 3,
+		Likes = 4,
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"HitBoxes","Fly","Killaura"},
@@ -106,6 +106,12 @@ return {
 				Comment = "test",
 				Date = "2026-03-10",
 				Liked = false,
+			},
+			{
+				Username = "breakpoint_guy",
+				Comment = "vouch",
+				Date = "2026-03-10",
+				Liked = true,
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer499"}
