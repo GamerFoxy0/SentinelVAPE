@@ -29,7 +29,8 @@ return {
 				Comment = "soo uhh where the config",
 				Date = "2026-02-17",
 				Liked = false,
-			},},
+			},
+         },
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy342331"}
 	},
 	{
@@ -79,7 +80,8 @@ return {
 				Comment = ":(",
 				Date = "2026-02-28",
 				Liked = false,
-			},},
+			},
+          },
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/rizzler12fge"}
 	},
 	{
@@ -105,7 +107,7 @@ return {
 				Date = "2026-03-10",
 				Liked = false,
 			},
-			,},
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer499"}
 	}
 }
