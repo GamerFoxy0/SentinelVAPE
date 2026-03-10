@@ -29,7 +29,6 @@ guislider.png
 guisliderrain.png
 guiv4.png
 guivape.png
-guivape.png
 info.png
 inventoryicon.png
 legit.png
