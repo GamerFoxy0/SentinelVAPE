@@ -14,7 +14,7 @@ return {
 		ConfigID = "LegitAbyss",
 		Directory = "sentinelvape",
 		Likes = 0,
-		Downloads = 0,
+		Downloads = 1,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"InstantReel","StaffDetector","FullBright","AutoRespawn","TubeBooster","AutoAchievements","FishChams","AutoSkipTutorial","CharacterOutlines","Anti-AFK","ChestChams","RedeemAllCodes","AutoDailyRewards","AntiRagdoll","AutorerollRace"},
 		Reviews = {
