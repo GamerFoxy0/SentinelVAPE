@@ -2,57 +2,6 @@
 
 return {
 	{
-		ID = "LU3119",
-		Title = "Legit Abyss Config",
-		Details = "Made for pro gamers",
-		Creator = "proguy342331",
-		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
-		Date = "2026-02-16",
-		LastUpdated = "2026-02-16",
-		SupportedGames = {"Abyss"},
-		SupportedGamesID = {127794225497302},
-		ConfigID = "LegitAbyss",
-		Directory = "sentinelvape",
-		Likes = 0,
-		Downloads = 1,
-		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
-		AffectedModules = {"InstantReel","StaffDetector","FullBright","AutoRespawn","TubeBooster","AutoAchievements","FishChams","AutoSkipTutorial","CharacterOutlines","Anti-AFK","ChestChams","RedeemAllCodes","AutoDailyRewards","AntiRagdoll","AutorerollRace"},
-		Reviews = {
-			{
-				Username = "paranormalsightings",
-				Comment = "How do i get it",
-				Date = "2026-03-08",
-				Liked = false,
-			},
-			{
-				Username = "zemxreal",
-				Comment = "soo uhh where the config",
-				Date = "2026-02-17",
-				Liked = false,
-			},
-         },
-		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy342331"}
-	},
-	{
-		ID = "LU2759",
-		Title = "GalaxyArsenal",
-		Details = "GalaxyTheme perfect for destroying cheaters blatant Config",
-		Creator = "proguy342331",
-		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
-		Date = "2026-02-18",
-		LastUpdated = "2026-02-18",
-		SupportedGames = {"Arsenal"},
-		SupportedGamesID = {286090429},
-		ConfigID = "GMArsenalBlatant",
-		Directory = "sentinelvape",
-		Likes = 0,
-		Downloads = 3,
-		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
-		AffectedModules = {},
-		Reviews = {},
-		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/proguy342331"}
-	},
-	{
 		ID = "LU1766",
 		Title = "jesus gayming chair blatant gangbanger 3000",
 		Details = "what is this diddy blud doing",
