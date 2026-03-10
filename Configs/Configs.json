@@ -107,13 +107,6 @@ return {
 				Date = "2026-03-10",
 				Liked = false,
 			}
-		,
-			{
-				Username = "breakpoint_guy",
-				Comment = "vouch",
-				Date = "2026-03-10",
-				Liked = true,
-			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer499"}
 	}
