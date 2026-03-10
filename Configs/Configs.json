@@ -109,5 +109,24 @@ return {
 			},
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer499"}
+	},
+	{
+		ID = "LU4194",
+		Title = "cool test",
+		Details = "Hmm idk",
+		Creator = "bedwarsprogamer499",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-03-10",
+		LastUpdated = "2026-03-10",
+		SupportedGames = {"Baseplate"},
+		SupportedGamesID = {123974602339071},
+		ConfigID = "diddybludop",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"HitBoxes","Fly","Killaura"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer499"}
 	}
 }
