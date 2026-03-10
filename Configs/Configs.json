@@ -82,4 +82,24 @@ return {
 			},},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/rizzler12fge"}
 	}
+,
+	{
+		ID = "LU5942",
+		Title = "test proguy",
+		Details = "OMG LEGIT",
+		Creator = "bedwarsprogamer499",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-03-10",
+		LastUpdated = "2026-03-10",
+		SupportedGames = {"Rivals"},
+		SupportedGamesID = {17625359962},
+		ConfigID = "test17625359962",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"ESP","AutoUse","DevBadge","Chams"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer499"}
+	}
 }
