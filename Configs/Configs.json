@@ -45,11 +45,18 @@ return {
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "Moonlight Larps",
 		Directory = "sentinelvape",
-		Likes = 0,
+		Likes = 1,
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"No OOB Check","Noslowdown","Hurt Effect Disabler","AntiKatana","Phase","AimAssist","No Smoke","DevBadge","Disguise","Gunmods","AntiRagdoll","RedeemAllCodes","HandCustomizer","AutoVote","AutoClaimBP","NameTags","PunchBypass","InventoryViewer","DeviceSpoofer","Anti-AFK","FastEquip","ActiveBypassV1","NameProtect","InfJump","ChatTag","Claim all rewards","Speed","NoCameraShake","Anti Flashbang","Atmosphere","SilentAim","Rain","Hitmarker Disabler"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "gamerfoxy02",
+				Comment = "underratted config vouch",
+				Date = "2026-03-12",
+				Liked = true,
+			}
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Gvvdbd4"}
 	}
 }
