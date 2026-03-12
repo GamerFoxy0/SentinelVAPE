@@ -10,7 +10,7 @@ return {
 		Date = "2026-02-28",
 		LastUpdated = "2026-02-28",
 		SupportedGames = {"rivals"},
-		SupportedGamesID = {17625359962},
+		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "diddybludop",
 		Directory = "sentinelvape",
 		Likes = 0,
