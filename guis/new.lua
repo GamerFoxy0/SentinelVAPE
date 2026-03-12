@@ -49,7 +49,8 @@ local mainapi = {
 		Peony = {{Color3.fromRGB(226, 208, 249), Color3.fromRGB(207, 171, 255)}, 9, 10},
 		Pumpkin = {{Color3.fromRGB(241, 166, 98), Color3.fromRGB(255, 216, 169), Color3.fromRGB(227, 139, 42)}, 2},
 		Purple = {{Color3.fromRGB(82, 67, 145), Color3.fromRGB(117, 95, 207)}, 8},
-		Rainbow = {{Color3.new(1, 1, 1), Color3.new(1, 1, 1)}, 10},
+		Rainbow = {{Color3.fromRGB(255, 0, 0), Color3.fromRGB(0, 0, 255)}, 1, 6},
+        Winter  = {{Color3.fromRGB(200, 230, 255), Color3.fromRGB(255, 255, 255), Color3.fromRGB(150, 200, 255)}, 6, 10},
 		Rue = {{Color3.fromRGB(234, 118, 176), Color3.fromRGB(31, 30, 30)}, 9},
 		Satin = {{Color3.fromRGB(215, 60, 67), Color3.fromRGB(140, 23, 39)}, 1},
 		Shadow = {{Color3.fromRGB(97, 131, 255), Color3.fromRGB(206, 212, 255)}, 6},
@@ -58,7 +59,6 @@ local mainapi = {
 		Sundae = {{Color3.fromRGB(206, 74, 126), Color3.fromRGB(122, 44, 77)}, 1, 8, 9},
 		Sunkist = {{Color3.fromRGB(242, 201, 76), Color3.fromRGB(242, 153, 74)}, 2, 3},
 		Water = {{Color3.fromRGB(12, 232, 199), Color3.fromRGB(12, 163, 232)}, 6, 7},
-		Winter = {{Color3.new(1, 1, 1), Color3.new(1, 1, 1)}, 10},
 		Wood = {{Color3.fromRGB(79, 109, 81), Color3.fromRGB(170, 139, 87), Color3.fromRGB(240, 235, 206)}, 5},
         Cyberpunk = {{Color3.fromRGB(255, 0, 204), Color3.fromRGB(0, 255, 204)}, 1, 9},
         Midnight = {{Color3.fromRGB(10, 12, 25), Color3.fromRGB(45, 50, 90)}, 10},
@@ -93,8 +93,8 @@ local guiService = cloneref(game:GetService('GuiService'))
 local runService = cloneref(game:GetService('RunService'))
 local httpService = cloneref(game:GetService('HttpService'))
 
-local GradientAPI = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/ColorAPI.lua"))()
-local PublicConfigsGui = loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/d3fed9af4da2615812e9eda055d0880c20585818afd57ee15c28a49f9dde292b/download"))()
+local GradientAPI = (isfolder("sentinelvape") and isfile("sentinelvape/ColorAPI.lua")) and loadstring(readfile("sentinelvape/ColorAPI.lua"))() or loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/ColorAPI.lua"))()
+local PublicConfigsGui = (isfolder("sentinelvape") and isfile("sentinelvape/Config.lua")) and loadstring(readfile("sentinelvape/Config.lua"))() or loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/Config.lua"))()
 local PublicConfigsGui = getgenv().PublicConfigsGui
 
 local SelectedProfile = "default"
@@ -134,6 +134,9 @@ for name, _ in pairs(mainapi.Themes) do
     table.insert(themeList, name)
 end
 table.sort(themeList)
+
+local gradientRunToken      = 0
+local gradientHeartbeat     = nil
 
 local getcustomassets = {
 	['sentinelvape/assets/new/add.png'] = 'rbxassetid://14368300605',
@@ -3656,8 +3659,8 @@ function mainapi:CreateGUI()
 			local body = httpService:JSONEncode({
 				nonce = httpService:GenerateGUID(false),
 				args = {
-					invite = {code = '5gJqhQmrdS'},
-					code = '5gJqhQmrdS'
+					invite = {code = 'sentinel0'},
+					code = 'sentinel0'
 				},
 				cmd = 'INVITE_BROWSER'
 			})
@@ -3679,7 +3682,7 @@ function mainapi:CreateGUI()
 
 		task.spawn(function()
 			tooltip.Text = 'Copied!'
-			setclipboard('https://discord.gg/M4nPKJrayE')
+			setclipboard('https://discord.gg/sentinel0')
 		end)
 	end)
 	settingsbutton.MouseEnter:Connect(function()
@@ -3943,19 +3946,31 @@ function mainapi:CreateCategory(categorysettings)
 
     self.Enabled = not self.Enabled
     divider.Visible = self.Enabled
-    if self.Enabled then
-        gradient.Enabled = true
-        self.GradientController = GradientAPI:CreateGradient({
-            Object = modulebutton,
-            Speed = 2, 
-            Mode = "fade", 
-            Direction = "TopDown",
-            Colors = {
-                Main = currentThemeColors.Main,
-                Secondary = currentThemeColors.Secondary,
-                Third = currentThemeColors.Third
-            }
-        })
+    if mainapi.RainbowMode.Value == 'Themes' then
+        if self.Enabled then
+            if self.GradientController then
+                self.GradientController:Remove()
+                self.GradientController = nil
+            end
+            gradient.Enabled = true
+            self.GradientController = GradientAPI:CreateGradient({
+                Object    = modulebutton,
+                Speed     = 2,
+                Mode      = "fade",
+                Direction = "TopDown",
+                Colors    = {
+                    Main      = currentThemeColors.Main,
+                    Secondary = currentThemeColors.Secondary,
+                    Third     = currentThemeColors.Third,
+                },
+            })
+        else
+            if self.GradientController then
+                self.GradientController:Remove()
+                self.GradientController = nil
+            end
+            gradient.Enabled = false
+        end
     else
         if self.GradientController then
             self.GradientController:Remove()
@@ -3967,16 +3982,19 @@ function mainapi:CreateCategory(categorysettings)
     modulebutton.BackgroundColor3 = (hovered or modulechildren.Visible) and color.Light(uipallet.Main, 0.02) or uipallet.Main
     dots.ImageColor3 = self.Enabled and Color3.fromRGB(50, 50, 50) or color.Light(uipallet.Main, 0.37)
     bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
-    bindtext.TextColor3 = color.Dark(uipallet.Text, 0.43)
+    bindtext.TextColor3  = color.Dark(uipallet.Text, 0.43)
+
     if not self.Enabled then
         for _, v in self.Connections do
             v:Disconnect()
         end
         table.clear(self.Connections)
     end
+
     if not multiple then
         mainapi:UpdateTextGUI()
     end
+
     task.spawn(modulesettings.Function, self.Enabled)
 end
 
@@ -6288,7 +6306,7 @@ scaleslider = guipane:CreateSlider({
 })
 guipane:CreateDropdown({
 	Name = 'GUI Theme',
-	List = inputService.TouchEnabled and {'new'} or {'new'},
+	List = inputService.TouchEnabled and {'new','old'} or {'new','old'},
 	Function = function(val, mouse)
 		if mouse then
 			writefile('sentinelvape/profiles/gui.txt', val)
@@ -6312,44 +6330,54 @@ mainapi.RainbowMode = guipane:CreateDropdown({
 })
 
 GUIThemes = guipane:CreateDropdown({
-    Name = 'GUIThemes',
-    List = themeList,
+    Name    = 'GUIThemes',
+    List    = themeList,
     Default = "Blend",
     Function = function(val)
         local themeData = mainapi.Themes[val]
-        if themeData then
-            local colorTable = themeData[1]
-            currentThemeColors.Main = colorTable[1]
-            currentThemeColors.Secondary = colorTable[2] or colorTable[1]
-            currentThemeColors.Third = colorTable[3] or colorTable[2] or colorTable[1]
-            local h, s, v = currentThemeColors.Main:ToHSV()
-            mainapi.GUIColor.Hue, mainapi.GUIColor.Sat, mainapi.GUIColor.Value = h, s, v
-            local active = GradientAPI.ActiveGradients[scarcitybanner]
-            if active then
-                active:ChangeColor(currentThemeColors.Main, currentThemeColors.Secondary, currentThemeColors.Third)
-            else
-                GradientAPI:CreateGradient({
-                    Object = scarcitybanner,
-                    Colors = currentThemeColors,
-                    Mode = "fade", 
-                    Direction = "LeftToRight",
-                    Speed = 1,
-                })
-            end
+        if not themeData then return end
 
-			for obj, controller in pairs(GradientAPI.ActiveGradients) do
-                controller:ChangeColor(
-                    currentThemeColors.Main, 
-                    currentThemeColors.Secondary, 
+        local colorTable = themeData[1]
+        currentThemeColors.Main      = colorTable[1]
+        currentThemeColors.Secondary = colorTable[2] or colorTable[1]
+        currentThemeColors.Third     = colorTable[3] or colorTable[2] or colorTable[1]
+
+        local h, s, v = currentThemeColors.Main:ToHSV()
+        mainapi.GUIColor.Hue   = h
+        mainapi.GUIColor.Sat   = s
+        mainapi.GUIColor.Value = v
+
+        local bannerCtrl = GradientAPI.ActiveGradients[scarcitybanner]
+        if bannerCtrl then
+            bannerCtrl:ChangeColor(
+                currentThemeColors.Main,
+                currentThemeColors.Secondary,
+                currentThemeColors.Third
+            )
+        else
+            GradientAPI:CreateGradient({
+                Object    = scarcitybanner,
+                Colors    = currentThemeColors,
+                Mode      = "fade",
+                Direction = "LeftToRight",
+                Speed     = 1,
+            })
+        end
+
+        for _, mod in pairs(mainapi.Modules) do
+            if mod.Enabled and mod.GradientController then
+                mod.GradientController:ChangeColor(
+                    currentThemeColors.Main,
+                    currentThemeColors.Secondary,
                     currentThemeColors.Third
                 )
             end
-
-            mainapi:UpdateTextGUI()
-            mainapi:UpdateGUI(h, s, v, true)
         end
+
+        mainapi:UpdateTextGUI()
+        mainapi:UpdateGUI(h, s, v, true)
     end,
-    Visible = false
+    Visible = false,
 })
 mainapi.RainbowSpeed = guipane:CreateSlider({
 	Name = 'Rainbow speed',
@@ -6535,42 +6563,79 @@ themeDir = textgui:CreateDropdown({
 })
 
 function GradientAPI:RunList(list)
-    for _, settings in ipairs(list) do
-        task.spawn(function()
-            local targets = GetGradientTargets(settings.Object)
-            for _, TextLabel in ipairs(targets) do
-                local UIGradient = GetOrCreateGradient(TextLabel)
+    gradientRunToken = gradientRunToken + 1
+    local myToken    = gradientRunToken
 
-                task.spawn(function()
-                    local colors = settings.Colors
-                    
-                    while TextLabel.Parent and TextLabel:IsDescendantOf(game) do
-                        if textguicolordrop.Value ~= 'Themes' then 
-                            break 
-                        end
-                        if not TextLabel.Visible or TextLabel.TextTransparency >= 1 then
-                            task.wait(0.2)
-                            continue
-                        end
-
-                        local topPos = TextLabel.AbsolutePosition
-                        local bottomPos = topPos + Vector2.new(0, TextLabel.AbsoluteSize.Y)
-
-                        local topColor = getGradientColor(topPos, colors.Main, colors.Secondary, colors.Third)
-                        local bottomColor = getGradientColor(bottomPos, colors.Main, colors.Secondary, colors.Third)
-
-                        UIGradient.Color = ColorSequence.new{
-                            ColorSequenceKeypoint.new(0, topColor),
-                            ColorSequenceKeypoint.new(1, bottomColor),
-                        }
-                        TextLabel.TextColor3 = Color3.new(1, 1, 1)
-                        task.wait(0.03) 
-                    end
-                end)
-            end
-        end)
+    if gradientHeartbeat then
+        gradientHeartbeat:Disconnect()
+        gradientHeartbeat = nil
     end
+
+    local entries = {}
+    for _, settings in ipairs(list) do
+        local colors  = settings.Colors
+        local targets = GetGradientTargets(settings.Object)
+        for _, textLabel in ipairs(targets) do
+            local uiGradient = GetOrCreateGradient(textLabel)
+            table.insert(entries, {
+                label    = textLabel,
+                gradient = uiGradient,
+                colors   = colors,
+            })
+        end
+    end
+
+    if #entries == 0 then return end
+
+    gradientHeartbeat = runService.Heartbeat:Connect(function()
+        if gradientRunToken ~= myToken then
+            gradientHeartbeat:Disconnect()
+            gradientHeartbeat = nil
+            return
+        end
+        if textguicolordrop.Value ~= 'Themes' then
+            gradientHeartbeat:Disconnect()
+            gradientHeartbeat = nil
+            return
+        end
+
+        local i = 1
+        while i <= #entries do
+            local e = entries[i]
+            local lbl = e.label
+
+            if not lbl.Parent or not lbl:IsDescendantOf(game) then
+                table.remove(entries, i)
+                pcall(function() e.gradient:Destroy() end)
+                continue
+            end
+
+            if not lbl.Visible or lbl.TextTransparency >= 1 then
+                i = i + 1
+                continue
+            end
+
+            local topPos    = lbl.AbsolutePosition
+            local bottomPos = topPos + Vector2.new(0, lbl.AbsoluteSize.Y)
+            local topColor  = getGradientColor(topPos,    e.colors.Main, e.colors.Secondary, e.colors.Third)
+            local botColor  = getGradientColor(bottomPos, e.colors.Main, e.colors.Secondary, e.colors.Third)
+
+            e.gradient.Color = ColorSequence.new({
+                ColorSequenceKeypoint.new(0, topColor),
+                ColorSequenceKeypoint.new(1, botColor),
+            })
+            lbl.TextColor3 = Color3.new(1, 1, 1)
+
+            i = i + 1
+        end
+
+        if #entries == 0 then
+            gradientHeartbeat:Disconnect()
+            gradientHeartbeat = nil
+        end
+    end)
 end
+
 
 local VapeTextScale = Instance.new('UIScale')
 VapeTextScale.Parent = textgui.Children
@@ -7084,7 +7149,17 @@ targetinfo = {
 mainapi.Libraries.targetinfo = targetinfo
 
 function mainapi:UpdateTextGUI(afterload)
+	gradientRunToken = gradientRunToken + 1
+    if gradientHeartbeat then
+        gradientHeartbeat:Disconnect()
+        gradientHeartbeat = nil
+    end
 	if not afterload and not mainapi.Loaded then return end
+
+	local hue, sat, val = mainapi.GUIColor.Hue, mainapi.GUIColor.Sat, mainapi.GUIColor.Value
+    local isThemeMode = mainapi.RainbowMode.Value == 'Themes'
+    local customcolor = textguicolordrop.Value == 'Custom color' and Color3.fromHSV(textguicolor.Hue, textguicolor.Sat, textguicolor.Value) or nil
+
 	if textgui.Button.Enabled then
 		local right = textgui.Children.AbsolutePosition.X > (gui.AbsoluteSize.X / 2)
 		VapeLogo.Visible = textguiwatermark.Enabled
@@ -7206,35 +7281,36 @@ function mainapi:UpdateTextGUI(afterload)
 		end
 
          for i, v in VapeLabels do
-            v.Object.LayoutOrder = i 
-            if textguicolordrop.Value == 'Themes' then 
-                v.Text.TextColor3 = Color3.new(1, 1, 1)
-            end
-            if v.Color then
-                v.Color.Parent.Line.Visible = i ~= 1
+			 v.Object.LayoutOrder = i
+            if textguicolordrop.Value ~= 'Themes' then
+                v.Text.TextColor3 = customcolor 
+                    or (isThemeMode and currentThemeColors.Main 
+                    or (mainapi.GUIColor.Rainbow 
+                        and Color3.fromHSV(mainapi:Color((hue - ((textguigradient and i + 2 or i) * 0.025)) % 1)) 
+                        or Color3.fromHSV(hue, sat, val)))
+                if v.Color then v.Color.BackgroundColor3 = v.Text.TextColor3 end
             end
         end
 	end
 
-if textguicolordrop.Value == 'Themes' then
-        task.spawn(function()
-            runService.RenderStepped:Wait() 
-            GradientAPI:RunList({
-                {
-                    Object = VapeLabelHolder, 
-                    Colors = {
-                        Main = currentThemeColors.Main,
-                        Secondary = currentThemeColors.Secondary,
-                        Third = currentThemeColors.Third
-                    },
-                    Mode = themeMode.Value,
-                    Direction = themeDir.Value
-                }
-            })
-        end)
+    if textguicolordrop.Value == 'Themes' then
+        GradientAPI:RunList({
+            {
+                Object = VapeLabelHolder,
+                Colors = {
+                    Main      = currentThemeColors.Main,
+                    Secondary = currentThemeColors.Secondary,
+                    Third     = currentThemeColors.Third,
+                },
+                Mode      = themeMode.Value,
+                Direction = themeDir.Value,
+            }
+        })
     end
 
-	mainapi:UpdateGUI(mainapi.GUIColor.Hue, mainapi.GUIColor.Sat, mainapi.GUIColor.Value, true)
+   if clickgui.Visible or mainapi.Legit.Window.Visible then
+        mainapi:UpdateGUI(hue, sat, val, true)
+    end
 end
 
 function mainapi:UpdateGUI(hue, sat, val, default)
