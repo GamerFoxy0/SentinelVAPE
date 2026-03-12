@@ -43,7 +43,7 @@ return {
 		LastUpdated = "2026-03-12",
 		SupportedGames = {"Rivals"},
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
-		ConfigID = "Moonlight Larps",
+		ConfigID = "MoonlightLarps",
 		Directory = "sentinelvape",
 		Likes = 1,
 		Downloads = 3,
