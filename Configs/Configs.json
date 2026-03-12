@@ -32,7 +32,7 @@ return {
 			},
           },
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/rizzler12fge"}
-	},,
+	},
 	{
 		ID = "LU9464",
 		Title = "Moonlight Larps",
