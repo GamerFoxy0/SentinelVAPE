@@ -58,5 +58,24 @@ return {
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Gvvdbd4"}
+	},
+	{
+		ID = "LU1461",
+		Title = "hvh fabi",
+		Details = "hvh",
+		Creator = "Jaddeburg",
+		OwnerID = "33B762CB-5A77-4B49-9B04-5264CCB81CB4",
+		Date = "2026-03-13",
+		LastUpdated = "2026-03-13",
+		SupportedGames = {"rivals"},
+		SupportedGamesID = {17625359962},
+		ConfigID = "hvh",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"HitboxBooster","No OOB Check","HitBoxes","Noslowdown","AutoSwitch","SpinBot","SilentAim","AimAssist","No Smoke","DevBadge","Disguise","Tracers","Gunmods","AntiRagdoll","SoundChanger","NameProtect","AutoVote","AutoClaimBP","Ragebot","NameTags","Speed","DeviceSpoofer","Keystrokes","InfJump","Fly","HandCustomizer","LongJump","ChatTag","ActiveBypassV1","AntiKatana","NoCameraShake","Anti Flashbang","PlayerModel","PunchBypass","Phase","Hitmarker Disabler"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jaddeburg"}
 	}
 }
