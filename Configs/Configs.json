@@ -46,7 +46,7 @@ return {
 		ConfigID = "MoonlightLarps",
 		Directory = "sentinelvape",
 		Likes = 1,
-		Downloads = 10,
+		Downloads = 11,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"No OOB Check","Noslowdown","Hurt Effect Disabler","AntiKatana","Phase","AimAssist","No Smoke","DevBadge","Disguise","Gunmods","AntiRagdoll","RedeemAllCodes","HandCustomizer","AutoVote","AutoClaimBP","NameTags","PunchBypass","InventoryViewer","DeviceSpoofer","Anti-AFK","FastEquip","ActiveBypassV1","NameProtect","InfJump","ChatTag","Claim all rewards","Speed","NoCameraShake","Anti Flashbang","Atmosphere","SilentAim","Rain","Hitmarker Disabler"},
 		Reviews = {
