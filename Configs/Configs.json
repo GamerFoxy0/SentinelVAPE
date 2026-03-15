@@ -77,5 +77,24 @@ return {
 		AffectedModules = {"HitboxBooster","No OOB Check","HitBoxes","Noslowdown","AutoSwitch","SpinBot","SilentAim","AimAssist","No Smoke","DevBadge","Disguise","Tracers","Gunmods","AntiRagdoll","SoundChanger","NameProtect","AutoVote","AutoClaimBP","Ragebot","NameTags","Speed","DeviceSpoofer","Keystrokes","InfJump","Fly","HandCustomizer","LongJump","ChatTag","ActiveBypassV1","AntiKatana","NoCameraShake","Anti Flashbang","PlayerModel","PunchBypass","Phase","Hitmarker Disabler"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jaddeburg"}
+	},
+	{
+		ID = "LU8422",
+		Title = "NeckhurtsWare",
+		Details = "Arsenal Mobile Raping Sessions.",
+		Creator = "Jarbooa7676",
+		OwnerID = "5eeb23c0-4bfd-498d-aecc-297e3d47bd31",
+		Date = "2026-03-15",
+		LastUpdated = "2026-03-15",
+		SupportedGames = {"Arsenal"},
+		SupportedGamesID = {286090429},
+		ConfigID = "NeckhurtsWare",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		AffectedModules = {"NoReloadTime","HandCustomizer","HitBoxes","NoSpread","NameTags","Speed","DeviceSpoofer","InfiniteAmmo","Anti-AFK","NoRecoil","AlwaysAuto","Atmosphere","DmgBoost","SilentAimbot","NoEquipTime","RapidFire","AlwaysCrit"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jarbooa7676"}
 	}
 }
