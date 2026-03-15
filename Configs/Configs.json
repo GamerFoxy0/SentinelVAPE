@@ -14,7 +14,7 @@ return {
 		ConfigID = "diddybludop",
 		Directory = "sentinelvape",
 		Likes = 0,
-		Downloads = 5,
+		Downloads = 6,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"Desync","RedeemAllCodes","HitboxBooster","GamingChair","NameTags","ESP","AntiKatana","Chams","FastEquip","SilentAim","AimAssist","ActiveBypassV1","StaffDetector","HitBoxes","PlayerModel","TriggerBot","Autowin","AntiFall"},
 		Reviews = {
