@@ -90,11 +90,18 @@ return {
 		SupportedGamesID = {286090429},
 		ConfigID = "NeckhurtsWare",
 		Directory = "sentinelvape",
-		Likes = 0,
+		Likes = 1,
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"NoReloadTime","HandCustomizer","HitBoxes","NoSpread","NameTags","Speed","DeviceSpoofer","InfiniteAmmo","Anti-AFK","NoRecoil","AlwaysAuto","Atmosphere","DmgBoost","SilentAimbot","NoEquipTime","RapidFire","AlwaysCrit"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "void2realyt",
+				Comment = "I vouch best rivals mobile config👍",
+				Date = "2026-03-15",
+				Liked = true,
+			}
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jarbooa7676"}
 	}
 }
