@@ -223,5 +223,24 @@ return {
 		AffectedModules = {"BedPlates","UI Cleanup","Velocity","SetPlayerLevel","Headless","KitRender","AutoVoidDrop","TrapDisabler","ESP","Zoom Unlocker","AutoBalloon","Interface","AutoKit","FastDrop","TriggerBot","AutoSuffocate","AC MOD View","Tracers","PickupRange","AntiFall","StorageESP","AutoFire","Breadcrumbs","ChestSteal","NameTags","Speed","Clean Kit","AutoHotbar","DamageIndicatorChanger","MetalDetector","Kill Effect","ChatTag","NoClickDelay","Atmosphere","ProjectileExploit","KitESP","FastBreak","Proximity Prompt Duration","AdetundeExploit","GamingChair","AutoShoot","AutoTool","BetterDavey","AutoGloop","ProximityExtender","StaffDetector","BedESP","Hit Color","ShopTierBypass","AimAssist","BedNotify","Bed Break Effect","Disguise","Cape","HitFix","ElkSummon","AutoBuy","Clutch","WinEffect","Sprint","China Hat","TexturePack","Reach","Damage Indicator","NoFall","AutoCharge","AutoPearl","AutoPlay",""},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer507"}
+	},
+	{
+		ID = "LU4598",
+		Title = "GalaxyAbyss",
+		Details = "abyss config for boring game",
+		Creator = "bedwarsprogamer507",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-03-15",
+		LastUpdated = "2026-03-15",
+		SupportedGames = {"Abyss"},
+		SupportedGamesID = {127794225497302},
+		ConfigID = "AbyssBlatant",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"AntiDrown","FullBright","AutoRespawn","TubeBooster","China Hat","GamingChair","CharacterOutlines","CustomNameTag","FishChams","Fly","AutoDailyRewards","Breadcrumbs","NoDmg","InstantReel","AutoSkipTutorial","Cape","Speed","Phase","AutorerollRace","StaffDetector","ChatTag","AutoRejoin","Disguise","Anti-AFK","AutoAchievements","Atmosphere","RedeemAllCodes","Headless","AntiRagdoll"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer507"}
 	}
 }
