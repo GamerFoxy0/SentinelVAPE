@@ -123,7 +123,7 @@ return {
 		ConfigID = "MoneyTightCc",
 		Directory = "sentinelvape",
 		Likes = 2,
-		Downloads = 10,
+		Downloads = 11,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"Ragebot","NameTags","Anti Flashbang","SilentAim","ActiveBypassV1","AntiKatana","AntiRagdoll"},
 		Reviews = {
