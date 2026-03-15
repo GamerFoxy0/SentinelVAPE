@@ -93,7 +93,7 @@ return {
 		Date = "2026-03-15",
 		LastUpdated = "2026-03-15",
 		SupportedGames = {"Arsenal"},
-		SupportedGamesID = {286090429, 79137385850056, 95645135481640, 98283919607281, 112464274410705},
+		SupportedGamesID = {286090429},
 		ConfigID = "NeckhurtsWare",
 		Directory = "sentinelvape",
 		Likes = 1,
