@@ -103,5 +103,24 @@ return {
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jarbooa7676"}
+	},
+	{
+		ID = "LU4289",
+		Title = "MoneyTightCc",
+		Details = "When money is tight you will need a closet cheat.",
+		Creator = "ILoveAk4988",
+		OwnerID = "5eeb23c0-4bfd-498d-aecc-297e3d47bd31",
+		Date = "2026-03-15",
+		LastUpdated = "2026-03-15",
+		SupportedGames = {"Rivals"},
+		SupportedGamesID = {17625359962},
+		ConfigID = "MoneyTightCc",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		AffectedModules = {"Ragebot","NameTags","Anti Flashbang","SilentAim","ActiveBypassV1","AntiKatana","AntiRagdoll"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/ILoveAk4988"}
 	}
 }
