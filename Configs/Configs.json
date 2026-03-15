@@ -185,5 +185,24 @@ return {
 		AffectedModules = {"MeleeChanger","HitBoxes","NoSpread","ESP","China Hat","StaffDetector","NoEquipTime","Phase","Arrows","Health","Tracers","GoldenKnifeTP","AntiRagdoll","AnnouncerChanger","NoReloadTime","AlwaysCrit","Reach","Cape","AntiAim","CharacterOutlines","NameTags","Speed","TauntChanger","InfiniteAmmo","Anti-AFK","NoRecoil","CamFov","Breadcrumbs","RapidFire","KillEffects","AutoRejoin","SkinChanger","HandCustomizer","DmgBoost","Atmosphere","Chams","DeviceSpoofer","AlwaysAuto"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer507"}
+	},
+	{
+		ID = "LU8831",
+		Title = "GalaxyBedwarsLobby",
+		Details = "This config is for Bedwars lobby | Blatant",
+		Creator = "bedwarsprogamer507",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-03-15",
+		LastUpdated = "2026-03-15",
+		SupportedGames = {"BedwarsLobby"},
+		SupportedGamesID = {6872265039},
+		ConfigID = "GalaxyBedwarsLobby",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"Sprint","Cape","Headless","CharacterOutlines","NameTags","ESP","China Hat","AutoCreate","Chams","Anti-AFK","StaffDetector","AutoKit","Disabler","Disguise","ChatTag","AutoRejoin","FOV","Atmosphere","Breadcrumbs","Tracers","GamingChair","InfJump","AntiRagdoll"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer507"}
 	}
 }
