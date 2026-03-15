@@ -116,7 +116,7 @@ return {
 		SupportedGamesID = {17625359962},
 		ConfigID = "MoneyTightCc",
 		Directory = "sentinelvape",
-		Likes = 1,
+		Likes = 2,
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"Ragebot","NameTags","Anti Flashbang","SilentAim","ActiveBypassV1","AntiKatana","AntiRagdoll"},
@@ -124,6 +124,12 @@ return {
 			{
 				Username = "void2realyt",
 				Comment = "I vouch super undetected closet cheat👍",
+				Date = "2026-03-15",
+				Liked = true,
+			},
+			{
+				Username = "gamerfoxy02",
+				Comment = "W names vouch",
 				Date = "2026-03-15",
 				Liked = true,
 			}
