@@ -204,5 +204,24 @@ return {
 		AffectedModules = {"Sprint","Cape","Headless","CharacterOutlines","NameTags","ESP","China Hat","AutoCreate","Chams","Anti-AFK","StaffDetector","AutoKit","Disabler","Disguise","ChatTag","AutoRejoin","FOV","Atmosphere","Breadcrumbs","Tracers","GamingChair","InfJump","AntiRagdoll"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer507"}
+	},
+	{
+		ID = "LU9286",
+		Title = "GalaxyBedwars",
+		Details = "better than voidware trust",
+		Creator = "bedwarsprogamer507",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-03-15",
+		LastUpdated = "2026-03-15",
+		SupportedGames = {"Bedwars"},
+		SupportedGamesID = {8444591321},
+		ConfigID = "GalaxyBedwars",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"BedPlates","UI Cleanup","Velocity","SetPlayerLevel","Headless","KitRender","AutoVoidDrop","TrapDisabler","ESP","Zoom Unlocker","AutoBalloon","Interface","AutoKit","FastDrop","TriggerBot","AutoSuffocate","AC MOD View","Tracers","PickupRange","AntiFall","StorageESP","AutoFire","Breadcrumbs","ChestSteal","NameTags","Speed","Clean Kit","AutoHotbar","DamageIndicatorChanger","MetalDetector","Kill Effect","ChatTag","NoClickDelay","Atmosphere","ProjectileExploit","KitESP","FastBreak","Proximity Prompt Duration","AdetundeExploit","GamingChair","AutoShoot","AutoTool","BetterDavey","AutoGloop","ProximityExtender","StaffDetector","BedESP","Hit Color","ShopTierBypass","AimAssist","BedNotify","Bed Break Effect","Disguise","Cape","HitFix","ElkSummon","AutoBuy","Clutch","WinEffect","Sprint","China Hat","TexturePack","Reach","Damage Indicator","NoFall","AutoCharge","AutoPearl","AutoPlay",""},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer507"}
 	}
 }
