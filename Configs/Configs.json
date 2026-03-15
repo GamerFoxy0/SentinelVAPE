@@ -116,11 +116,18 @@ return {
 		SupportedGamesID = {17625359962},
 		ConfigID = "MoneyTightCc",
 		Directory = "sentinelvape",
-		Likes = 0,
+		Likes = 1,
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"Ragebot","NameTags","Anti Flashbang","SilentAim","ActiveBypassV1","AntiKatana","AntiRagdoll"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "void2realyt",
+				Comment = "I vouch super undetected closet cheat👍",
+				Date = "2026-03-15",
+				Liked = true,
+			}
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/ILoveAk4988"}
 	}
 }
