@@ -199,7 +199,7 @@ return {
 		ConfigID = "GalaxyBedwarsLobby",
 		Directory = "sentinelvape",
 		Likes = 0,
-		Downloads = 0,
+		Downloads = 1,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"Sprint","Cape","Headless","CharacterOutlines","NameTags","ESP","China Hat","AutoCreate","Chams","Anti-AFK","StaffDetector","AutoKit","Disabler","Disguise","ChatTag","AutoRejoin","FOV","Atmosphere","Breadcrumbs","Tracers","GamingChair","InfJump","AntiRagdoll"},
 		Reviews = {},
