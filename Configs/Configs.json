@@ -164,7 +164,14 @@ return {
 		Downloads = 2,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"SoundChanger","RedeemAllCodes","HitboxBooster","AutoClaimBP","HitBoxes","NameTags","PunchBypass","BackTrack","StaffDetector","SilentAim","ActiveBypassV1","Breadcrumbs","DevBadge","Speed","DeviceSpoofer","FastEquip","Claim all rewards","TriggerBot","AntiKatana","Noslowdown"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "charming_sloth_4141",
+				Comment = "yes",
+				Date = "2026-03-17",
+				Liked = false,
+			}
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer507"}
 	},
 	{
