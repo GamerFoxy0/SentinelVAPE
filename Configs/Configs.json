@@ -160,7 +160,7 @@ return {
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "GalaxyRivalsLegit",
 		Directory = "sentinelvape",
-		Likes = 0,
+		Likes = 1,
 		Downloads = 2,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"SoundChanger","RedeemAllCodes","HitboxBooster","AutoClaimBP","HitBoxes","NameTags","PunchBypass","BackTrack","StaffDetector","SilentAim","ActiveBypassV1","Breadcrumbs","DevBadge","Speed","DeviceSpoofer","FastEquip","Claim all rewards","TriggerBot","AntiKatana","Noslowdown"},
