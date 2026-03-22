@@ -7229,7 +7229,12 @@ function mainapi:UpdateTextGUI(afterload)
 				holdertext.Position = UDim2.fromOffset(right and 3 or 6, 2)
 				holdertext.BackgroundTransparency = 1
 				holdertext.BorderSizePixel = 0
-				holdertext.Text = i..(v.ExtraText and " <font color='#A8A8A8'>"..v.ExtraText()..'</font>' or '')
+				local extra = ""
+                if v.ExtraText then
+                    local text = type(v.ExtraText) == "function" and v.ExtraText() or v.ExtraText
+                    extra = " <font color='#A8A8A8'>"..tostring(text).."</font>"
+                end
+                holdertext.Text = i..extra
 				holdertext.TextSize = 15
 				holdertext.FontFace = textguifont.Value
 				holdertext.RichText = true
