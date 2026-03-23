@@ -78,7 +78,7 @@ return {
 		ConfigID = "hvh",
 		Directory = "sentinelvape",
 		Likes = 0,
-		Downloads = 11,
+		Downloads = 12,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"HitboxBooster","No OOB Check","HitBoxes","Noslowdown","AutoSwitch","SpinBot","SilentAim","AimAssist","No Smoke","DevBadge","Disguise","Tracers","Gunmods","AntiRagdoll","SoundChanger","NameProtect","AutoVote","AutoClaimBP","Ragebot","NameTags","Speed","DeviceSpoofer","Keystrokes","InfJump","Fly","HandCustomizer","LongJump","ChatTag","ActiveBypassV1","AntiKatana","NoCameraShake","Anti Flashbang","PlayerModel","PunchBypass","Phase","Hitmarker Disabler"},
 		Reviews = {},
