@@ -40,7 +40,7 @@ return {
 		Creator = "Gvvdbd_4",
 		OwnerID = "ecdff7de-df4a-48fa-b2ae-ba39a02c3832",
 		Date = "2026-03-12",
-		LastUpdated = "2026-03-16",
+		LastUpdated = "2026-03-28",
 		SupportedGames = {"Rivals"},
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "MoonlightLarps",
