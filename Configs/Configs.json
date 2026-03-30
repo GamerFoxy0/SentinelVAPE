@@ -269,11 +269,18 @@ return {
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "MobileAutoWin",
 		Directory = "sentinelvape",
-		Likes = 0,
+		Likes = 1,
 		Downloads = 1,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"ProjectileTP","AutoVote","No OOB Check","Ragebot","InfJump","AntiKatana","Anti-AFK","GunLimitremover","AntiFreeze","ActiveBypassV1","No Smoke","AntiRiotShield","Anti Flashbang","Auto Queue","SilentAim","Closest TP","AutoLoadout"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "void2realyt",
+				Comment = "I vouch its literally so good I made it like best mobile auto win streaks are ggs",
+				Date = "2026-03-30",
+				Liked = true,
+			}
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/CompositionsLarp"}
 	}
 }
