@@ -113,11 +113,11 @@ return {
 	{
 		ID = "LU4289",
 		Title = "MoneyTightCc",
-		Details = "When money is tight you will need a closet cheat.",
+		Details = "No description",
 		Creator = "ILoveAk4988",
 		OwnerID = "ecdff7de-df4a-48fa-b2ae-ba39a02c3832",
 		Date = "2026-03-15",
-		LastUpdated = "2026-03-15",
+		LastUpdated = "2026-03-30",
 		SupportedGames = {"Rivals"},
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "MoneyTightCc",
