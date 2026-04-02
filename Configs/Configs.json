@@ -38,7 +38,7 @@ return {
 		Title = "Moonlight Larps",
 		Details = "No description",
 		Creator = "Gvvdbd_4",
-		OwnerID = "ecdff7de-df4a-48fa-b2ae-ba39a02c3832",
+		OwnerID = "f7a6d868-9819-485c-9923-3cca2161966e",
 		Date = "2026-03-12",
 		LastUpdated = "2026-03-30",
 		SupportedGames = {"Rivals"},
@@ -89,7 +89,7 @@ return {
 		Title = "NeckhurtsWare",
 		Details = "No description",
 		Creator = "Jarbooa7676",
-		OwnerID = "ecdff7de-df4a-48fa-b2ae-ba39a02c3832",
+		OwnerID = "f7a6d868-9819-485c-9923-3cca2161966e",
 		Date = "2026-03-15",
 		LastUpdated = "2026-03-30",
 		SupportedGames = {"Arsenal"},
@@ -98,7 +98,7 @@ return {
 		Directory = "sentinelvape",
 		Likes = 1,
 		Downloads = 15,
-		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=false, MobileOnly=true},
 		AffectedModules = {"NoReloadTime","HandCustomizer","HitBoxes","NoSpread","NameTags","Speed","DeviceSpoofer","InfiniteAmmo","Anti-AFK","NoRecoil","AlwaysAuto","Atmosphere","DmgBoost","SilentAimbot","NoEquipTime","RapidFire","AlwaysCrit"},
 		Reviews = {
 			{
@@ -115,7 +115,7 @@ return {
 		Title = "MoneyTightCc",
 		Details = "No description",
 		Creator = "ILoveAk4988",
-		OwnerID = "ecdff7de-df4a-48fa-b2ae-ba39a02c3832",
+		OwnerID = "f7a6d868-9819-485c-9923-3cca2161966e",
 		Date = "2026-03-15",
 		LastUpdated = "2026-03-30",
 		SupportedGames = {"Rivals"},
@@ -124,7 +124,7 @@ return {
 		Directory = "sentinelvape",
 		Likes = 2,
 		Downloads = 17,
-		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=false, MobileOnly=true},
 		AffectedModules = {"Ragebot","NameTags","Anti Flashbang","SilentAim","ActiveBypassV1","AntiKatana","AntiRagdoll"},
 		Reviews = {
 			{
@@ -262,7 +262,7 @@ return {
 		Title = "MobileAutoWin",
 		Details = "Rivals Winstreaks ggs",
 		Creator = "CompositionsLarp",
-		OwnerID = "ecdff7de-df4a-48fa-b2ae-ba39a02c3832",
+		OwnerID = "f7a6d868-9819-485c-9923-3cca2161966e",
 		Date = "2026-03-30",
 		LastUpdated = "2026-03-30",
 		SupportedGames = {"Rivals"},
@@ -271,7 +271,7 @@ return {
 		Directory = "sentinelvape",
 		Likes = 1,
 		Downloads = 1,
-		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=false, MobileOnly=true},
 		AffectedModules = {"ProjectileTP","AutoVote","No OOB Check","Ragebot","InfJump","AntiKatana","Anti-AFK","GunLimitremover","AntiFreeze","ActiveBypassV1","No Smoke","AntiRiotShield","Anti Flashbang","Auto Queue","SilentAim","Closest TP","AutoLoadout"},
 		Reviews = {
 			{
