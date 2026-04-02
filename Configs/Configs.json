@@ -260,18 +260,18 @@ return {
 	{
 		ID = "LU9091",
 		Title = "MobileAutoWin",
-		Details = "Rivals Winstreaks ggs",
+		Details = "No description",
 		Creator = "CompositionsLarp",
 		OwnerID = "f7a6d868-9819-485c-9923-3cca2161966e",
 		Date = "2026-03-30",
-		LastUpdated = "2026-03-30",
+		LastUpdated = "2026-04-02",
 		SupportedGames = {"Rivals"},
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "MobileAutoWin",
 		Directory = "sentinelvape",
 		Likes = 1,
 		Downloads = 2,
-		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=false, MobileOnly=true},
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"ProjectileTP","AutoVote","No OOB Check","Ragebot","InfJump","AntiKatana","Anti-AFK","GunLimitremover","AntiFreeze","ActiveBypassV1","No Smoke","AntiRiotShield","Anti Flashbang","Auto Queue","SilentAim","Closest TP","AutoLoadout"},
 		Reviews = {
 			{
