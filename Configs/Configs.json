@@ -296,7 +296,7 @@ return {
 		ConfigID = "RainPain",
 		Directory = "sentinelvape",
 		Likes = 0,
-		Downloads = 0,
+		Downloads = 1,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"BedPlates","KitESP","FastBreak","Velocity","TaxRemover","SetPlayerLevel","KitRender","AutoVoidDrop","Nuker","AutoTool","DesirePA","AutoBalloon","ChatTag","ProjectileAimbot","StaffDetector","Realistic Shader","AutoKit","Phase","JadeCooldown","BlockCPSRemover","BedNotify","InfJump","AC MOD View","YuziDasher","FastConsume","AutoBuy","FastDrop","BeehiveSpy","NoFall","Sprint","Auto ClickerV2","StorageESP","ShopTierBypass","TrapDisabler","ChestSteal","AutoPlay","RegentCooldown","AutoHonor","AntiNoClip","NameTags","AutoCounter","NoSlowdown","KeepSprint","AntiFall","AutoHotbar","Anti-AFK","Reach","Spider","Killaura","ProjectileAura","Kill Effect","NoBuildLimit","AntiDeath","PickupRange","FOV","AutoConsume","NoClickDelay","AutoSteal","ProjectileExploit","GeneratorESP","Speed"},
 		Reviews = {},
