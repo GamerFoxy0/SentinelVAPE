@@ -282,5 +282,24 @@ return {
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/CompositionsLarp"}
+	},
+	{
+		ID = "LU8079",
+		Title = "RainPain",
+		Details = "Pains in the Rain",
+		Creator = "Snendjdjdjd4",
+		OwnerID = "f7a6d868-9819-485c-9923-3cca2161966e",
+		Date = "2026-04-06",
+		LastUpdated = "2026-04-06",
+		SupportedGames = {"Bedwars"},
+		SupportedGamesID = {6872265039, 6872274481, 8444591321, 8560631822, 16008862571},
+		ConfigID = "RainPain",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		AffectedModules = {"BedPlates","KitESP","FastBreak","Velocity","TaxRemover","SetPlayerLevel","KitRender","AutoVoidDrop","Nuker","AutoTool","DesirePA","AutoBalloon","ChatTag","ProjectileAimbot","StaffDetector","Realistic Shader","AutoKit","Phase","JadeCooldown","BlockCPSRemover","BedNotify","InfJump","AC MOD View","YuziDasher","FastConsume","AutoBuy","FastDrop","BeehiveSpy","NoFall","Sprint","Auto ClickerV2","StorageESP","ShopTierBypass","TrapDisabler","ChestSteal","AutoPlay","RegentCooldown","AutoHonor","AntiNoClip","NameTags","AutoCounter","NoSlowdown","KeepSprint","AntiFall","AutoHotbar","Anti-AFK","Reach","Spider","Killaura","ProjectileAura","Kill Effect","NoBuildLimit","AntiDeath","PickupRange","FOV","AutoConsume","NoClickDelay","AutoSteal","ProjectileExploit","GeneratorESP","Speed"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Snendjdjdjd4"}
 	}
 }
