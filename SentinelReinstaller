@@ -1,0 +1,6 @@
+delfolder("sentinelvape/games")
+ delfolder("sentinelvape/guis")
+ delfile("sentinelvape/main.lua")
+ delfolder("sentinelvape/assets")
+ delfolder("sentinelvape/libraries")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
