@@ -161,7 +161,7 @@ return {
 		ConfigID = "GalaxyRivalsLegit",
 		Directory = "sentinelvape",
 		Likes = 1,
-		Downloads = 4,
+		Downloads = 5,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"SoundChanger","RedeemAllCodes","HitboxBooster","AutoClaimBP","HitBoxes","NameTags","PunchBypass","BackTrack","StaffDetector","SilentAim","ActiveBypassV1","Breadcrumbs","DevBadge","Speed","DeviceSpoofer","FastEquip","Claim all rewards","TriggerBot","AntiKatana","Noslowdown"},
 		Reviews = {
