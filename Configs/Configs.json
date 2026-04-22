@@ -286,11 +286,11 @@ return {
 	{
 		ID = "LU8079",
 		Title = "RainPain",
-		Details = "Pains in the Rain",
+		Details = "No description",
 		Creator = "Snendjdjdjd4",
 		OwnerID = "f7a6d868-9819-485c-9923-3cca2161966e",
 		Date = "2026-04-06",
-		LastUpdated = "2026-04-06",
+		LastUpdated = "2026-04-22",
 		SupportedGames = {"Bedwars"},
 		SupportedGamesID = {6872265039, 6872274481, 8444591321, 8560631822, 16008862571},
 		ConfigID = "RainPain",
