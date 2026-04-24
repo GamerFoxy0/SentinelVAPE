@@ -327,5 +327,24 @@ return {
 		AffectedModules = {"No OOB Check","GamingChair","Noslowdown","ViewModel","AutoUse","Hurt Effect Disabler","AntiKatana","GunLimitremover","AntiFreeze","No Smoke","DevBadge","Disguise","Tracers","AntiRagdoll","SkinChanger","HandCustomizer","AutoVote","AutoClaimBP","Wallbang","China Hat","AutoLoadout","NameTags","Breadcrumbs","Speed","ThirdPerson","DeviceSpoofer","Chams","Anti-AFK","FastEquip","Cape","StaffDetector","NoEquipAnimation","SilentAim","ProjectileTP","NoWeaponBob","AntiRiotShield","FastProjectiles","ESP","Anti Flashbang","Atmosphere","CustomNametag","Arrows","Hitmarker Disabler"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer535"}
+	},
+	{
+		ID = "LU8573",
+		Title = "LegitCheating",
+		Details = "a config for designed to legit cheat with all skin changer options changed",
+		Creator = "bedwarsprogamer535",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-04-24",
+		LastUpdated = "2026-04-24",
+		SupportedGames = {"Rivals"},
+		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
+		ConfigID = "LegitCheating",
+		Directory = "sentinellite",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"SkinChanger","Noslowdown","Anti-AFK","Tracers","SilentAim","DeviceSpoofer","No Smoke"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer535"}
 	}
 }
