@@ -312,11 +312,11 @@ return {
 	{
 		ID = "LU9359",
 		Title = "Pink Op Blatant config",
-		Details = "Undetected and best since 2026",
+		Details = "No description",
 		Creator = "bedwarsprogamer535",
 		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
 		Date = "2026-04-22",
-		LastUpdated = "2026-04-22",
+		LastUpdated = "2026-04-24",
 		SupportedGames = {"Rivals"},
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "PinkCfg",
