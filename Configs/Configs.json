@@ -97,7 +97,7 @@ return {
 		ConfigID = "NeckhurtsWare",
 		Directory = "sentinelvape",
 		Likes = 1,
-		Downloads = 18,
+		Downloads = 19,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=false, MobileOnly=true},
 		AffectedModules = {"NoReloadTime","HandCustomizer","HitBoxes","NoSpread","NameTags","Speed","DeviceSpoofer","InfiniteAmmo","Anti-AFK","NoRecoil","AlwaysAuto","Atmosphere","DmgBoost","SilentAimbot","NoEquipTime","RapidFire","AlwaysCrit"},
 		Reviews = {
