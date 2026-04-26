@@ -341,7 +341,7 @@ return {
 		ConfigID = "LegitCheating",
 		Directory = "sentinellite",
 		Likes = 0,
-		Downloads = 0,
+		Downloads = 1,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"SkinChanger","Noslowdown","Anti-AFK","Tracers","SilentAim","DeviceSpoofer","No Smoke"},
 		Reviews = {},
