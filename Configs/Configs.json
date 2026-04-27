@@ -365,5 +365,24 @@ return {
 		AffectedModules = {"SkinChanger"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer535"}
+	},
+	{
+		ID = "LU9638",
+		Title = "LegitWars",
+		Details = "Legit config for bedwars with range visualiser (ka is range visualizer)",
+		Creator = "getpwnedbydvds",
+		OwnerID = "5964C3C6-4B1B-4BBE-983A-8E71AF37D9F2",
+		Date = "2026-04-27",
+		LastUpdated = "2026-04-27",
+		SupportedGames = {"Bedwars"},
+		SupportedGamesID = {8444591321},
+		ConfigID = "LegitWars",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"BedPlates","KitESP","FastBreak","Velocity","SetPlayerLevel","KitRender (5v5)","Motion Blur","ESP","Fullbright","StaffDetector","BedESP","Auto Bank","KitSkins","AC MOD View","Tracers","BeehiveSpy","Sprint","KitRender (squads)","REDvsBLUE (wool)","Reach","ChestSteal","AntiNoClip","NameTags","ProjectileAimbot","Killaura","DisableStreamer","DamageIndicatorChanger","Chams","AutoHannah","AimAssist","HitBoxes","AutoBuy","NoClickDelay","NoSlowdown","TriggerBot","AutoClickerV2","PickupRange"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/getpwnedbydvds"}
 	}
 }
