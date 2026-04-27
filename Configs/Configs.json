@@ -375,7 +375,7 @@ return {
 		Date = "2026-04-27",
 		LastUpdated = "2026-04-27",
 		SupportedGames = {"Bedwars"},
-		SupportedGamesID = {8444591321},
+		SupportedGamesID = {6872265039, 6872274481, 8444591321, 8560631822, 16008862571},
 		ConfigID = "LegitWars",
 		Directory = "sentinelvape",
 		Likes = 0,
