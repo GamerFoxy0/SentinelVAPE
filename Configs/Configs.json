@@ -264,7 +264,7 @@ return {
 		Creator = "CompositionsLarp",
 		OwnerID = "3a428801-a2ff-4649-b0c1-277681d4d64e",
 		Date = "2026-03-30",
-		LastUpdated = "2026-04-02",
+		LastUpdated = "2026-04-29",
 		SupportedGames = {"Rivals"},
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "MobileAutoWin",
