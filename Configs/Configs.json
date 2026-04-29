@@ -397,11 +397,18 @@ return {
 		SupportedGamesID = {89469502395769},
 		ConfigID = "PinkFarms",
 		Directory = "sentinelvape",
-		Likes = 0,
+		Likes = 1,
 		Downloads = 1,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"AutoWeightBonus","AutoSell","AutoPlace","AutoClaimOfflineRewards","AutoClaimFreeRewards","Disabler","NameTags","Phase"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "gamerfoxy02",
+				Comment = "vouch i got brainrotted",
+				Date = "2026-04-29",
+				Liked = true,
+			}
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Hshsjdjdjd035"}
 	}
 }
