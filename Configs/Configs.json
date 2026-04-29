@@ -384,5 +384,24 @@ return {
 		AffectedModules = {"BedPlates","KitESP","FastBreak","Velocity","SetPlayerLevel","KitRender (5v5)","Motion Blur","ESP","Fullbright","StaffDetector","BedESP","Auto Bank","KitSkins","AC MOD View","Tracers","BeehiveSpy","Sprint","KitRender (squads)","REDvsBLUE (wool)","Reach","ChestSteal","AntiNoClip","NameTags","ProjectileAimbot","Killaura","DisableStreamer","DamageIndicatorChanger","Chams","AutoHannah","AimAssist","HitBoxes","AutoBuy","NoClickDelay","NoSlowdown","TriggerBot","AutoClickerV2","PickupRange"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/getpwnedbydvds"}
+	},
+	{
+		ID = "LU9296",
+		Title = "PinkFarms",
+		Details = "Picks the fuck out of luckyblocks",
+		Creator = "Hshsjdjdjd035",
+		OwnerID = "3a428801-a2ff-4649-b0c1-277681d4d64e",
+		Date = "2026-04-29",
+		LastUpdated = "2026-04-29",
+		SupportedGames = {"Kick. A Luckyblock"},
+		SupportedGamesID = {89469502395769},
+		ConfigID = "PinkFarms",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		AffectedModules = {"AutoWeightBonus","AutoSell","AutoPlace","AutoClaimOfflineRewards","AutoClaimFreeRewards","Disabler","NameTags","Phase"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Hshsjdjdjd035"}
 	}
 }
