@@ -117,14 +117,14 @@ return {
 		Creator = "ILoveAk4988",
 		OwnerID = "3a428801-a2ff-4649-b0c1-277681d4d64e",
 		Date = "2026-03-15",
-		LastUpdated = "2026-03-30",
+		LastUpdated = "2026-04-29",
 		SupportedGames = {"Rivals"},
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
 		ConfigID = "MoneyTightCc",
 		Directory = "sentinelvape",
 		Likes = 2,
 		Downloads = 22,
-		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=false, MobileOnly=true},
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"Ragebot","NameTags","Anti Flashbang","SilentAim","ActiveBypassV1","AntiKatana","AntiRagdoll"},
 		Reviews = {
 			{
