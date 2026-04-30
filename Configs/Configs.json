@@ -410,7 +410,7 @@ return {
 		SupportedGamesID = {89469502395769},
 		ConfigID = "PinkFarms",
 		Directory = "sentinelvape",
-		Likes = 1,
+		Likes = 2,
 		Downloads = 1,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
 		AffectedModules = {"AutoWeightBonus","AutoSell","AutoPlace","AutoClaimOfflineRewards","AutoClaimFreeRewards","Disabler","NameTags","Phase"},
@@ -419,6 +419,12 @@ return {
 				Username = "gamerfoxy02",
 				Comment = "vouch i got brainrotted",
 				Date = "2026-04-29",
+				Liked = true,
+			},
+			{
+				Username = "vopium",
+				Comment = "Vouch I made it and love it",
+				Date = "2026-04-30",
 				Liked = true,
 			}
 		},
