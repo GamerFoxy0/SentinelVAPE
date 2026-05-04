@@ -405,7 +405,7 @@ return {
 		Creator = "Hshsjdjdjd035",
 		OwnerID = "d5eec716-5a26-41ca-809d-61221d2986be",
 		Date = "2026-04-29",
-		LastUpdated = "2026-04-29",
+		LastUpdated = "2026-05-04",
 		SupportedGames = {"Kick. A Luckyblock"},
 		SupportedGamesID = {89469502395769},
 		ConfigID = "PinkFarms",
