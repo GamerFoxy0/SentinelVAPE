@@ -1,6 +1,7 @@
-delfolder("sentinelvape/games")
- delfolder("sentinelvape/guis")
- delfile("sentinelvape/main.lua")
- delfolder("sentinelvape/assets")
- delfolder("sentinelvape/libraries")
+if not isfolder("sentinelvape") then return end
+if not isfolder("sentinelvape/games") then delfolder("sentinelvape/games") end
+if not isfolder("sentinelvape/guis") then delfolder("sentinelvape/guis") end
+if not isfile("sentinelvape/main.lua") then delfile("sentinelvape/main.lua") end
+if not isfolder("sentinelvape/assets") then delfolder("sentinelvape/assets") end
+if not isfolder("sentinelvape/libraries") then delfolder("sentinelvape/libraries") end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
