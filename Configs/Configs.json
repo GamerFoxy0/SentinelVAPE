@@ -369,11 +369,11 @@ return {
 	{
 		ID = "LU9638",
 		Title = "LegitWars",
-		Details = "Legit config for bedwars with range visualiser (ka is range visualizer)",
+		Details = "No description",
 		Creator = "getpwnedbydvds",
 		OwnerID = "5964C3C6-4B1B-4BBE-983A-8E71AF37D9F2",
 		Date = "2026-04-27",
-		LastUpdated = "2026-04-27",
+		LastUpdated = "2026-05-06",
 		SupportedGames = {"Bedwars"},
 		SupportedGamesID = {6872265039, 6872274481, 8444591321, 8560631822, 16008862571},
 		ConfigID = "LegitWars",
