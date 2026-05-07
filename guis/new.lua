@@ -11,6 +11,7 @@ local mainapi = {
 	Libraries = {},
 	Modules = {},
 	Place = game.PlaceId,
+	Game  = game.GameId,
 	Profile = 'default',
 	Profiles = {},
 	RainbowSpeed = {Value = 1},
@@ -5691,8 +5692,11 @@ function mainapi:Load(skipgui, profile)
 		self.ProfileLabel.Size = UDim2.fromOffset(getfontsize(self.ProfileLabel.Text, self.ProfileLabel.TextSize, self.ProfileLabel.Font).X + 16, 24)
 	end
 
-	if isfile('sentinelvape/profiles/'..self.Profile..self.Place..'.txt') then
-		local savedata = loadJson('sentinelvape/profiles/'..self.Profile..self.Place..'.txt')
+	local globalPath  = 'sentinelvape/profiles/'..self.Profile..'.global'..tostring(self.Game)..'.txt'
+    local perIdPath   = 'sentinelvape/profiles/'..self.Profile..self.Place..'.txt'
+    local useGlobal   = mainapi.GlobalConfig and mainapi.GlobalConfig.Enabled and isfile(globalPath)
+	if isfile(useGlobal and globalPath or perIdPath) then
+        local savedata = loadJson(useGlobal and globalPath or perIdPath)
 		if not savedata then
 			savedata = {Categories = {}, Modules = {}, Legit = {}}
 			self:CreateNotification('Vape', 'Failed to load '..self.Profile..' profile.', 10, 'alert')
@@ -5872,7 +5876,7 @@ function mainapi:Save(newprofile)
 	end
 
 	writefile('sentinelvape/profiles/'..game.GameId..'.gui.txt', httpService:JSONEncode(guidata))
-	writefile('sentinelvape/profiles/'..self.Profile..self.Place..'.txt', httpService:JSONEncode(savedata))
+    writefile(mainapi.GlobalConfig and mainapi.GlobalConfig.Enabled and ('sentinelvape/profiles/'..self.Profile..'.global'..tostring(self.Game)..'.txt') or ('sentinelvape/profiles/'..self.Profile..self.Place..'.txt'), httpService:JSONEncode(savedata))
 end
 
 function mainapi:SaveOptions(object, savedoptions)
@@ -6175,13 +6179,20 @@ mainapi.MultiKeybind = general:CreateToggle({
 	Name = 'Enable Multi-Keybinding',
 	Tooltip = 'Allows multiple keys to be bound to a module (eg. G + H)'
 })
+mainapi.GlobalConfig = general:CreateToggle({
+    Name = 'Use Config for all IDs',
+    Tooltip = 'When enabled, uses a shared config across all game place IDs.',
+    Default = false,
+})
 general:CreateButton({
 	Name = 'Reset current profile',
 	Function = function()
 	mainapi.Save = function() end
-		if isfile('sentinelvape/profiles/'..mainapi.Profile..mainapi.Place..'.txt') and delfile then
-			delfile('sentinelvape/profiles/'..mainapi.Profile..mainapi.Place..'.txt')
-		end
+        if mainapi.GlobalConfig and mainapi.GlobalConfig.Enabled then
+            if isfile('sentinelvape/profiles/'..mainapi.Profile..'.global'..tostring(game.GameId)..'.txt') and delfile then delfile('sentinelvape/profiles/'..mainapi.Profile..'.global.txt') end
+        else
+            if isfile('sentinelvape/profiles/'..mainapi.Profile..mainapi.Place..'.txt') and delfile then delfile('sentinelvape/profiles/'..mainapi.Profile..mainapi.Place..'.txt') end
+        end
 		shared.vapereload = true
 		if shared.VapeDeveloper then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
@@ -7148,8 +7159,12 @@ targetinfo = {
 }
 mainapi.Libraries.targetinfo = targetinfo
 
+local de = false
 function mainapi:UpdateTextGUI(afterload)
-	gradientRunToken = gradientRunToken + 1
+    if de and not afterload then return end
+    de = true
+    task.delay(0.05, function() de = false end)
+    gradientRunToken = gradientRunToken + 1
     if gradientHeartbeat then
         gradientHeartbeat:Disconnect()
         gradientHeartbeat = nil
