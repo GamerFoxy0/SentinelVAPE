@@ -435,5 +435,24 @@ return {
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Hshsjdjdjd035"}
+	},
+	{
+		ID = "LU4859",
+		Title = "my awesome config",
+		Details = "testing nob",
+		Creator = "bedwarsprogamer558",
+		OwnerID = "118902FB-33DE-4530-BCC0-969FF5E55C7B",
+		Date = "2026-05-11",
+		LastUpdated = "2026-05-11",
+		SupportedGames = {"Baseplate"},
+		SupportedGamesID = {168556275},
+		ConfigID = "coolcfg",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"Fly"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer558"}
 	}
 }
