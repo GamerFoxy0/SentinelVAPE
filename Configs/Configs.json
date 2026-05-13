@@ -435,5 +435,24 @@ return {
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Hshsjdjdjd035"}
+	},
+	{
+		ID = "LU3216",
+		Title = "SlimedOut",
+		Details = "Slimes people out in the hood",
+		Creator = "Jarbooa7676",
+		OwnerID = "d97512e0-27ce-4d6f-9afe-7b3ab8bb27e7",
+		Date = "2026-05-13",
+		LastUpdated = "2026-05-13",
+		SupportedGames = {"SlimeRNG"},
+		SupportedGamesID = {92416421522960, 101402127000136, 108455473966865, 112296196649210},
+		ConfigID = "SlimedOut",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		AffectedModules = {"Anti-AFK","AutoIndex","Phase","AutoBuyZone","AutoRebirth","AutoBestZone","NameTags","Killaura","AutoRoll","AutoLoot","AutoEquipBest"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jarbooa7676"}
 	}
 }
