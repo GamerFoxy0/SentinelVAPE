@@ -454,5 +454,24 @@ return {
 		AffectedModules = {"Anti-AFK","AutoIndex","Phase","AutoBuyZone","AutoRebirth","AutoBestZone","NameTags","Killaura","AutoRoll","AutoLoot","AutoEquipBest"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jarbooa7676"}
+	},
+	{
+		ID = "LU4941",
+		Title = "FlickShootingNgas",
+		Details = "Shoots people like crazy and is godmode tuff",
+		Creator = "Jarbooa7676",
+		OwnerID = "d97512e0-27ce-4d6f-9afe-7b3ab8bb27e7",
+		Date = "2026-05-13",
+		LastUpdated = "2026-05-13",
+		SupportedGames = {"FPSFlick"},
+		SupportedGamesID = {136801880565837},
+		ConfigID = "Flicker",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=true},
+		AffectedModules = {"AutoQuest","NameTags","Speed","InfJump","Anti-AFK","SilentAim"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jarbooa7676"}
 	}
 }
