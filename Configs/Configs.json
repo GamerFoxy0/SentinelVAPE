@@ -486,5 +486,24 @@ return {
 		AffectedModules = {"AutoQuest","NameTags","Speed","InfJump","Anti-AFK","SilentAim"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jarbooa7676"}
+	},
+	{
+		ID = "LU4216",
+		Title = "NEW OP",
+		Details = "BESTEST EVR CONFIG MADE BY ME :D",
+		Creator = "imtooostg",
+		OwnerID = "B0C34506-4DB2-46C8-95B3-C2CB89121163",
+		Date = "2026-06-08",
+		LastUpdated = "2026-06-08",
+		SupportedGames = {"rivals"},
+		SupportedGamesID = {117398147513099},
+		ConfigID = "NEw",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=true, isAnonymous=true, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"AimAssist"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/imtooostg"}
 	}
 }
