@@ -486,5 +486,24 @@ return {
 		AffectedModules = {"AutoQuest","NameTags","Speed","InfJump","Anti-AFK","SilentAim"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/Jarbooa7676"}
+	},
+	{
+		ID = "LU9182",
+		Title = "ChillConfig",
+		Details = "not too much but its cool",
+		Creator = "bedwarsprogamer497",
+		OwnerID = "C8A02ACD-8775-4E4B-888D-5B5DA9088ED1",
+		Date = "2026-06-11",
+		LastUpdated = "2026-06-11",
+		SupportedGames = {"Rivals"},
+		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
+		ConfigID = "ChillConfig",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer497"}
 	}
 }
