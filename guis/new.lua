@@ -7523,5 +7523,5 @@ mainapi:Clean(inputService.InputEnded:Connect(function(inputObj)
 		table.remove(mainapi.HeldKeybinds, ind)
 	end
 end))
-
+getgenv().SCRIPT_KEY = "KEYLESS"--break junkie enviroment so key system ignores 
 return mainapi
