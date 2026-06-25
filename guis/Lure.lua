@@ -4173,6 +4173,10 @@ function VapeWindow:CreateCategory(name)
             end
         end
 
+        function mod:CreateTextList(d)
+            return cat:_createElement("TextList", d, self)
+        end
+
         function mod:CreateDropdown(d)
             return cat:_createElement("Dropdown", d, self)
         end
@@ -4304,6 +4308,34 @@ function VapeWindow:CreateCategory(name)
             function elem:SetVisibility(bool)
                 cp:SetVisibility(bool)
             end
+        elseif elemType == "TextList" then
+    local list = sec:Dropdown({
+        Name = Data.Name,
+        Flag = Data.Name .. (parent and parent.Name or ""),
+        Items = Data.List or Data.Items or {},
+        Default = Data.Default,
+        Multi = true,
+        Callback = function(val)
+            elem.Value = val
+            elem.List = val
+            elem.ListEnabled = val
+            if Data.Function then Data.Function(val) end
+            if Data.Callback then Data.Callback(val) end
+        end
+    })
+    elem.Value = {}
+    elem.List = {}
+    elem.ListEnabled = {}
+    elem.Object = list
+    elem._list = list
+
+    function elem:SetVisibility(bool)
+        list:SetVisibility(bool)
+    end
+
+    function elem:ChangeValue(val)
+        -- mhm
+    end
 
         elseif elemType == "TwoSlider" then
             local slideMin = sec:Slider({
