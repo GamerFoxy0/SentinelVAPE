@@ -1,4 +1,4 @@
-if game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/version.txt"):gsub("%s+", "") ~= "0.8.2" then
+if game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/version.txt"):gsub("%s+", "") ~= "0.8.25" then
      if isfolder("sentinelvape") then
         delfolder("sentinelvape/games")
         delfolder("sentinelvape/guis")
