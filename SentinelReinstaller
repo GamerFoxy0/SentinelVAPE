@@ -1,7 +1,31 @@
+local cloneref = cloneref or function(obj) return obj end
+local StarterGui = cloneref(game:GetService("StarterGui"))
+if not isfolder("sentinellite") then return end
+if isfolder("sentinellite/games") then delfolder("sentinellite/games") end
+if isfolder("sentinellite/guis") then delfolder("sentinellite/guis") end
+if isfile("sentinellite/main.lua") then delfile("sentinellite/main.lua") end
+if isfolder("sentinellite/assets") then delfolder("sentinellite/assets") end
+if isfolder("sentinellite/libraries") then delfolder("sentinellite/libraries") end
+if isfolder("sentinellite/modules") then delfolder("sentinellite/modules") end
+if isfolder("sentinellite/plugins") then delfolder("sentinellite/plugins") end
 if not isfolder("sentinelvape") then return end
-if not isfolder("sentinelvape/games") then delfolder("sentinelvape/games") end
-if not isfolder("sentinelvape/guis") then delfolder("sentinelvape/guis") end
-if not isfile("sentinelvape/main.lua") then delfile("sentinelvape/main.lua") end
-if not isfolder("sentinelvape/assets") then delfolder("sentinelvape/assets") end
-if not isfolder("sentinelvape/libraries") then delfolder("sentinelvape/libraries") end
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/NewMainScript.lua"))()
+if isfolder("sentinelvape/games") then delfolder("sentinelvape/games") end
+if isfolder("sentinelvape/guis") then delfolder("sentinelvape/guis") end
+if isfile("sentinelvape/main.lua") then delfile("sentinelvape/main.lua") end
+if isfolder("sentinelvape/assets") then delfolder("sentinelvape/assets") end
+if isfolder("sentinelvape/libraries") then delfolder("sentinelvape/libraries") end
+if isfolder("sentinelvape/modules") then delfolder("sentinelvape/modules") end
+if isfolder("sentinelvape/plugins") then delfolder("sentinelvape/plugins") end
+if not isfolder("sentinelrise") then return end
+if isfolder("sentinelrise/games") then delfolder("sentinelrise/games") end
+if isfolder("sentinelrise/guis") then delfolder("sentinelrise/guis") end
+if isfile("sentinelrise/main.lua") then delfile("sentinelrise/main.lua") end
+if isfolder("sentinelrise/assets") then delfolder("sentinelrise/assets") end
+if isfolder("sentinelrise/libraries") then delfolder("sentinelrise/libraries") end
+if isfolder("sentinelrise/modules") then delfolder("sentinelrise/modules") end
+if isfolder("sentinelrise/plugins") then delfolder("sentinelrise/plugins") end
+StarterGui:SetCore('SendNotification', {--i choose lazy way
+		Title = 'Sentinel',
+		Text = 'Deleted old files successfully.',
+		Duration = 10,
+})
