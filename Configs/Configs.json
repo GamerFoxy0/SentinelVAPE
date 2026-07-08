@@ -407,6 +407,12 @@ return {
 				Comment = "is this a cc?",
 				Date = "2026-07-08",
 				Liked = false,
+			},
+			{
+				Username = "nivo1",
+				Comment = "no its called legitwars for no reason 😭",
+				Date = "2026-07-08",
+				Liked = false,
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/getpwnedbydvds"}
