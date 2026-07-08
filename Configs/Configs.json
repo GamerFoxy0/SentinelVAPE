@@ -325,7 +325,14 @@ return {
 		Downloads = 17,
 		Settings = {isCodeOnly=false, isAnonymous=true, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"No OOB Check","GamingChair","Noslowdown","ViewModel","AutoUse","Hurt Effect Disabler","AntiKatana","GunLimitremover","AntiFreeze","No Smoke","DevBadge","Disguise","Tracers","AntiRagdoll","SkinChanger","HandCustomizer","AutoVote","AutoClaimBP","Wallbang","China Hat","AutoLoadout","NameTags","Breadcrumbs","Speed","ThirdPerson","DeviceSpoofer","Chams","Anti-AFK","FastEquip","Cape","StaffDetector","NoEquipAnimation","SilentAim","ProjectileTP","NoWeaponBob","AntiRiotShield","FastProjectiles","ESP","Anti Flashbang","Atmosphere","CustomNametag","Arrows","Hitmarker Disabler"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "captain12328",
+				Comment = "hi weres config?",
+				Date = "2026-07-08",
+				Liked = false,
+			}
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer535"}
 	},
 	{
