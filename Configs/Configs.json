@@ -413,6 +413,12 @@ return {
 				Comment = "no its called legitwars for no reason 😭",
 				Date = "2026-07-08",
 				Liked = false,
+			},
+			{
+				Username = "rez_010_39428",
+				Comment = "Bro, is that username originally from Roblox?",
+				Date = "2026-07-10",
+				Liked = false,
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/getpwnedbydvds"}
