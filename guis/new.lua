@@ -3941,63 +3941,48 @@ function mainapi:CreateCategory(categorysettings)
 		end
 
 		function moduleapi:Toggle(multiple)
-    if mainapi.ThreadFix then
-        setthreadidentity(8)
-    end
+			if mainapi.ThreadFix then setthreadidentity(8) end
+			if self.GradientController then
+				self.GradientController:Remove()
+				self.GradientController = nil
+			end
+			gradient.Enabled = false
 
-    self.Enabled = not self.Enabled
-    divider.Visible = self.Enabled
-    if mainapi.RainbowMode.Value == 'Themes' then
-        if self.Enabled then
-            if self.GradientController then
-                self.GradientController:Remove()
-                self.GradientController = nil
-            end
-            gradient.Enabled = true
-            self.GradientController = GradientAPI:CreateGradient({
-                Object    = modulebutton,
-                Speed     = 2,
-                Mode      = "fade",
-                Direction = "TopDown",
-                Colors    = {
-                    Main      = currentThemeColors.Main,
-                    Secondary = currentThemeColors.Secondary,
-                    Third     = currentThemeColors.Third,
-                },
-            })
-        else
-            if self.GradientController then
-                self.GradientController:Remove()
-                self.GradientController = nil
-            end
-            gradient.Enabled = false
-        end
-    else
-        if self.GradientController then
-            self.GradientController:Remove()
-            self.GradientController = nil
-        end
-        gradient.Enabled = false
-    end
-    modulebutton.TextColor3 = (hovered or modulechildren.Visible) and uipallet.Text or color.Dark(uipallet.Text, 0.16)
-    modulebutton.BackgroundColor3 = (hovered or modulechildren.Visible) and color.Light(uipallet.Main, 0.02) or uipallet.Main
-    dots.ImageColor3 = self.Enabled and Color3.fromRGB(50, 50, 50) or color.Light(uipallet.Main, 0.37)
-    bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
-    bindtext.TextColor3  = color.Dark(uipallet.Text, 0.43)
+			self.Enabled = not self.Enabled
+			divider.Visible = self.Enabled
 
-    if not self.Enabled then
-        for _, v in self.Connections do
-            v:Disconnect()
-        end
-        table.clear(self.Connections)
-    end
+			if mainapi.RainbowMode.Value == 'Themes' and self.Enabled then
+				gradient.Enabled = true
+				self.GradientController = GradientAPI:CreateGradient({
+					Object    = modulebutton,
+					Speed     = 2,
+					Mode      = "fade",
+					Direction = "TopDown",
+					Colors    = {
+						Main      = currentThemeColors.Main,
+						Secondary = currentThemeColors.Secondary,
+						Third     = currentThemeColors.Third,
+					},
+				})
+			end
 
-    if not multiple then
-        mainapi:UpdateTextGUI()
-    end
+			modulebutton.TextColor3       = (hovered or modulechildren.Visible) and uipallet.Text or
+			color.Dark(uipallet.Text, 0.16)
+			modulebutton.BackgroundColor3 = (hovered or modulechildren.Visible) and color.Light(uipallet.Main, 0.02) or
+			uipallet.Main
+			dots.ImageColor3              = self.Enabled and Color3.fromRGB(50, 50, 50) or
+			color.Light(uipallet.Main, 0.37)
+			bindicon.ImageColor3          = color.Dark(uipallet.Text, 0.43)
+			bindtext.TextColor3           = color.Dark(uipallet.Text, 0.43)
 
-    task.spawn(modulesettings.Function, self.Enabled)
-end
+			if not self.Enabled then
+				for _, v in self.Connections do v:Disconnect() end
+				table.clear(self.Connections)
+			end
+
+			if not multiple then mainapi:UpdateTextGUI() end
+			task.spawn(modulesettings.Function, self.Enabled)
+		end
 
 		for i, v in components do
 			moduleapi['Create'..i] = function(_, optionsettings)
@@ -4377,10 +4362,13 @@ function mainapi:CreateOverlay(categorysettings)
 		end
 	end)
 	self:Clean(clickgui:GetPropertyChangedSignal('Visible'):Connect(function()
+		if not categoryapi.Update then return end
 		categoryapi:Update()
 	end))
 
+		if categoryapi.Update then
 	categoryapi:Update()
+end
 	categoryapi.Object = window
 	categoryapi.Children = customchildren
 	self.Categories[categorysettings.Name] = categoryapi
@@ -7160,10 +7148,23 @@ targetinfo = {
 mainapi.Libraries.targetinfo = targetinfo
 
 local de = false
+local dePending = false
 function mainapi:UpdateTextGUI(afterload)
-    if de and not afterload then return end
+    if de and not afterload then
+        dePending = true
+        return
+    end
     de = true
-    task.delay(0.05, function() de = false end)
+    dePending = false
+    task.delay(0.05, function()
+        de = false
+        if dePending then
+            dePending = false
+            if mainapi and mainapi.UpdateTextGUI then
+                mainapi:UpdateTextGUI()
+            end
+        end
+    end)
     gradientRunToken = gradientRunToken + 1
     if gradientHeartbeat then
         gradientHeartbeat:Disconnect()
@@ -7523,4 +7524,5 @@ mainapi:Clean(inputService.InputEnded:Connect(function(inputObj)
 		table.remove(mainapi.HeldKeybinds, ind)
 	end
 end))
+
 return mainapi
