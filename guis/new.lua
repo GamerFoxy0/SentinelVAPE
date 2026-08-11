@@ -94,9 +94,23 @@ local guiService = cloneref(game:GetService('GuiService'))
 local runService = cloneref(game:GetService('RunService'))
 local httpService = cloneref(game:GetService('HttpService'))
 
-local GradientAPI = (isfolder("sentinelvape") and isfile("sentinelvape/ColorAPI.lua")) and loadstring(readfile("sentinelvape/ColorAPI.lua"))() or loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/ColorAPI.lua"))()
-local PublicConfigsGui = (isfolder("sentinelvape") and isfile("sentinelvape/Config.lua")) and loadstring(readfile("sentinelvape/Config.lua"))() or loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/Config.lua"))()
-local PublicConfigsGui = getgenv().PublicConfigsGui
+local GradientAPI = (isfolder("sentinelvape") and isfolder("sentinelvape/libraries") and isfile("sentinelvape/libraries/ColorAPI.lua")) and loadstring(readfile("sentinelvape/libraries/ColorAPI.lua"))() or loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/refs/heads/main/libraries/ColorAPI.lua"))()
+local PublicConfigsGui = nil
+local function getPublicConfigsGui()
+    if not PublicConfigsGui then
+        local isskidded, r = pcall(function()
+            if isfile("sentinelvape/libraries/Config.lua") then
+                return loadstring(readfile("sentinelvape/libraries/Config.lua"))()
+            end
+        end)
+        if isskidded and r then
+            PublicConfigsGui = r
+        else
+            mainapi:CreateNotification("Vape", "Failed to load Config.lua", 15, "alert")
+        end
+    end
+    return PublicConfigsGui
+end
 
 local SelectedProfile = "default"
 
@@ -2111,7 +2125,7 @@ components = {
 			if not table.find(optionapi.List, addvalue.Text) then
 				optionapi:ChangeValue(addvalue.Text)
 				SelectedProfile = addvalue.Text
-				PublicConfigsGui:UpdateProfile(SelectedProfile)
+				if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 				addvalue.Text = ''
 			end
 		end)
@@ -2119,7 +2133,7 @@ components = {
 			if enter and not table.find(optionapi.List, addvalue.Text) then
 				optionapi:ChangeValue(addvalue.Text)
 				SelectedProfile = addvalue.Text
-				PublicConfigsGui:UpdateProfile(SelectedProfile)
+				if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 				addvalue.Text = ''
 			end
 		end)
@@ -4582,7 +4596,7 @@ function mainapi:CreateCategoryList(categorysettings)
 			if not table.find(categoryapi.List, addMainbutton.Text) then
 				categoryapi:ChangeValue(addMainbutton.Text)
 				SelectedProfile = addMainbutton.Text
-				PublicConfigsGui:UpdateProfile(SelectedProfile)
+				if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 				addMainbutton.Text = ''
 			end
 		end)
@@ -4590,7 +4604,7 @@ function mainapi:CreateCategoryList(categorysettings)
 			if enter and not table.find(categoryapi.List, addMainbutton.Text) then
 				categoryapi:ChangeValue(addMainbutton.Text)
 				SelectedProfile = addMainbutton.Text
-				PublicConfigsGui:UpdateProfile(SelectedProfile)
+				if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 				addMainbutton.Text = ''
 			end
 		end)
@@ -4598,17 +4612,19 @@ function mainapi:CreateCategoryList(categorysettings)
 			if not table.find(categoryapi.List, configname) then
 				categoryapi:ChangeValue(configname)
 				SelectedProfile = configname
-				PublicConfigsGui:UpdateProfile(SelectedProfile)
+				if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 			end
 		end
 		publicButton.MouseButton1Click:Connect(function()
+			local cfg = getPublicConfigsGui()
+			if not cfg then return end
 			if mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI") then
-				PublicConfigsGui:Close(mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI"))
+				cfg:Close(mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI"))
 			else
-				local function notif(...) 
-					return mainapi:CreateNotification(...) 
+				local function notif(...)
+					return mainapi:CreateNotification(...)
 				end
-				PublicConfigsGui:Init(mainapi.gui.ScaledGui, notif, addvape,mainapi.GUIColor,"sentinelvape",SelectedProfile)
+				cfg:Init(mainapi.gui.ScaledGui, notif, addvape, mainapi.GUIColor, "sentinelvape", SelectedProfile)
 			end
 		end)
 	else
@@ -4661,7 +4677,7 @@ function mainapi:CreateCategoryList(categorysettings)
 			if not table.find(categoryapi.List, addvalue.Text) then
 				categoryapi:ChangeValue(addvalue.Text)
 				SelectedProfile = addvalue.Text
-				PublicConfigsGui:UpdateProfile(SelectedProfile)
+				if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 				addvalue.Text = ''
 			end
 		end)
@@ -4679,7 +4695,7 @@ function mainapi:CreateCategoryList(categorysettings)
 			if enter and not table.find(categoryapi.List, addvalue.Text) then
 				categoryapi:ChangeValue(addvalue.Text)
 				SelectedProfile = addvalue.Text
-				PublicConfigsGui:UpdateProfile(SelectedProfile)
+				if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 				addvalue.Text = ''
 			end
 		end)
@@ -4843,14 +4859,14 @@ function mainapi:CreateCategoryList(categorysettings)
 					if v.Name ~= mainapi.Profile then
 						categoryapi:ChangeValue(v.Name)
 						SelectedProfile = v.Name
-						PublicConfigsGui:UpdateProfile(SelectedProfile)
+						if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 					end
 				end)
 				object.MouseButton1Click:Connect(function()
 					mainapi:Save(v.Name)
 					mainapi:Load(true)
 					SelectedProfile = v.Name
-					PublicConfigsGui:UpdateProfile(SelectedProfile)
+					if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 				end)
 				object.MouseEnter:Connect(function()
 					bind.Visible = true
@@ -5504,7 +5520,7 @@ function mainapi:CreateLegit()
 				end
 				v.Children.Visible = (not visible or window.Visible) and v.Enabled
 			if mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI") then
-			   PublicConfigsGui:Close(mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI"))
+			   if PublicConfigsGui then PublicConfigsGui:Close(mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI")) end
 			end
 			end
 		end
@@ -7475,7 +7491,7 @@ mainapi:Clean(inputService.InputBegan:Connect(function(inputObj)
 				v.Visible = false
 			end
 			if mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI") then
-			getgenv().PublicConfigsGui:Close(mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI"))
+			if PublicConfigsGui then PublicConfigsGui:Close(mainapi.gui.ScaledGui:FindFirstChild("ConfigGUI")) end
 			end
 			clickgui.Visible = not clickgui.Visible
 			tooltip.Visible = false
@@ -7501,7 +7517,7 @@ mainapi:Clean(inputService.InputBegan:Connect(function(inputObj)
 				mainapi:Save(v.Name)
 				mainapi:Load(true)
 				SelectedProfile = v.Name
-				PublicConfigsGui:UpdateProfile(SelectedProfile)
+				if PublicConfigsGui then PublicConfigsGui:UpdateProfile(SelectedProfile) end
 				break
 			end
 		end
