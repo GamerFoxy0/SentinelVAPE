@@ -568,5 +568,24 @@ return {
 		AffectedModules = {"Desync","Target Info","No OOB Check","Noslowdown","ViewModel","FastProjectiles","SpinBot","AntiFreeze","No Smoke","Keystrokes","AntiPaintball","AmmoIndicator","Gunmods","AntiRagdoll","SkinChanger","HandCustomizer","ActiveBypassV2","Breadcrumbs","DropCollector","BulletTracers","Radar","Anime Pictures","AntiCameraShake","GunSoundChanger","Disguise","HitSounds","Atmosphere","AutoVote","AutoClaimBP","Gravity","FastEquip","CustomNametag","PlayerModel","ESP","HitNotifier","Crosshair"},
 		Reviews = {},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarsprogamer4617"}
+	},
+	{
+		ID = "LU1679",
+		Title = "justawhiteguy's config v1",
+		Details = "ye",
+		Creator = "OR332avenue",
+		OwnerID = "7BB8933F-5C3C-4DF2-A37D-EC6C6DAE23D6",
+		Date = "2026-08-22",
+		LastUpdated = "2026-08-22",
+		SupportedGames = {"rivals"},
+		SupportedGamesID = {17625359962},
+		ConfigID = "yes",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"SkinChanger","CustomNametag","Target Info","SilentAim","Headless","HandCustomizer","InfJump"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/OR332avenue"}
 	}
 }
