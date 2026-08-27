@@ -709,5 +709,24 @@ return {
 			}
 		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarprogamer4621"}
+	},
+	{
+		ID = "LU4780",
+		Title = "bashiman config",
+		Details = "No description.",
+		Creator = "jevvishjosh",
+		OwnerID = "9DDACFDE-17C2-4387-97B5-44459189FCE5",
+		Date = "2026-08-27",
+		LastUpdated = "2026-08-27",
+		SupportedGames = {"rivals"},
+		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
+		ConfigID = "bashif config",
+		Directory = "sentinelvape",
+		Likes = 0,
+		Downloads = 0,
+		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
+		AffectedModules = {"SkinChanger","Atmosphere","GunSoundChanger","Crosshair","ESP","SilentAim","AntiKatana","HitSounds"},
+		Reviews = {},
+		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/jevvishjosh"}
 	}
 }
