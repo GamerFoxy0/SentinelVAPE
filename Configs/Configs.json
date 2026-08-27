@@ -726,7 +726,7 @@ return {
 		LastUpdated = "2026-08-27",
 		SupportedGames = {"rivals"},
 		SupportedGamesID = {17625359962, 18126510175, 71874690745115, 117398147513099, 129604661913557, 133215910299950},
-		ConfigID = "bashif config",
+		ConfigID = "bashifconfig",
 		Directory = "sentinelvape",
 		Likes = 0,
 		Downloads = 10,
