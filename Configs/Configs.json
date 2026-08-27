@@ -604,7 +604,14 @@ return {
 		Downloads = 0,
 		Settings = {isCodeOnly=false, isAnonymous=false, PcOnly=true, MobileOnly=false},
 		AffectedModules = {"SkinChanger","HandCustomizer","ActiveBypassV2","Breadcrumbs","BulletTracers","CharacterOutlines","CustomNametag","ViewModel","ESP","Anime Pictures","DeviceSpoofer","StaffDetector","SilentAim","Disguise","Arrows","Playermods","Atmosphere","Cape","Tracers","Crosshair","HitNotifier","AutoLoadout"},
-		Reviews = {},
+		Reviews = {
+			{
+				Username = "adripler",
+				Comment = "I hate it and hate it and hate it",
+				Date = "2026-08-27",
+				Liked = false,
+			}
+		},
 		Code = {"https://raw.githubusercontent.com/GamerFoxy0/SentinelVAPE/main/Configs/data/bedwarprogamer4621"}
 	}
 }
